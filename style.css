@@ -947,7 +947,7 @@ margin-right: -44px !important;
     }
 
     .catalog_card {
-        width: 165px;
+        width: 170px;
     }
 
     .footer_rights {
@@ -980,10 +980,6 @@ margin-right: -44px !important;
     .swiper-pagination-fraction {
         top: 110px !important;
         left: 160px !important;
-    }
-
-    .catalog_card {
-        width: 170px;
     }
 
     .catalog_card-img {
