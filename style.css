@@ -137,7 +137,7 @@ ul {
 .menu_btn {
     display: none;
     width: 40px;
-    height: 20px;
+    height: 16px;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -358,7 +358,7 @@ ul {
 .mySwiper_Partners, .swiper-initialized,.swiper-horizontal, .swiper-backface-hidden{
 margin-right: -44px !important;
 } */
-.Form_wrapper{
+.Form_wrapper {
     display: flex;
     justify-content: space-around;
     background-color: #fff;
@@ -367,23 +367,27 @@ margin-right: -44px !important;
     height: 400px;
     border-radius: 20px;
 }
-.Form__inner{
+
+.Form__inner {
     width: 400px;
     height: 300px;
 }
-.Form__title{
+
+.Form__title {
     margin-bottom: 32px;
     margin-top: 0;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 32px;
 }
-.Form__text{
+
+.Form__text {
     font-size: 14px;
     font-weight: 100;
     color: #8f8f8f;
 }
-.Form__inner-input>input{
+
+.Form__inner-input>input {
     width: 417px;
     height: 47px;
     margin-bottom: 15px;
@@ -391,17 +395,18 @@ margin-right: -44px !important;
     border-radius: 10px;
     border: 2px solid rgba(73, 132, 197, 0.2);
 }
+
 .Form__inner-input>p:focus {
-     border: 1px solid #6AAAE5;
+    border: 1px solid #6AAAE5;
 }
 
-.Form__checkbox{
+.Form__checkbox {
     font-size: 12px;
     color: #9F9F9F;
     display: inline-block;
 }
 
-.Form__button > button{
+.Form__button>button {
     background-color: #6AAAE5;
     width: 147px;
     height: 47px;
@@ -412,46 +417,58 @@ margin-right: -44px !important;
     font-size: 16px;
     color: #fff;
 }
-.Form__button > button:hover{
+
+.Form__button>button:hover {
     background-color: #fff;
     border: 2px solid #6AAAE5;
     color: #6AAAE5;
 }
-.footer__wrapper{
+
+.footer__wrapper {
     display: flex;
     gap: 0 50px;
 }
-.footer_inner-title{
+
+.footer_inner-title {
     font-size: 18px;
     margin-bottom: 25px;
 }
-.footer_inner-list{
+
+.footer_inner-list {
     margin-top: 0;
 }
-.footer__company-item:hover{
+
+.footer__company-item:hover {
     color: #6AAAE5;
 }
-.footer_inner-title:hover{
+
+.footer_inner-title:hover {
     color: #6AAAE5;
 }
-.footer__company-item{
+
+.footer__company-item {
     margin-bottom: 20px;
 }
-.inner__connection-list{
+
+.inner__connection-list {
     margin: 0;
 }
-.inner__connection-phone{
+
+.inner__connection-phone {
     margin-bottom: 10px;
 }
-.inner__networks{
+
+.inner__networks {
     display: flex;
     gap: 0 10px;
 }
-.hr{
+
+.hr {
     margin: 1rem 0;
-    color: inherit; 
+    color: inherit;
 }
-.footer_rights{
+
+.footer_rights {
     display: flex;
     gap: 0 75px;
 }
@@ -623,9 +640,10 @@ margin-right: -44px !important;
         left: -80px;
     }
 
-    .buutone__menu_ggg {
+    .buutone__menu_item {
         display: flex;
         gap: 0 20px;
+        align-items: center;
     }
 
     .buttone__search--active {
@@ -670,10 +688,12 @@ margin-right: -44px !important;
     .swiper_slide-Popular {
         margin-right: 15px !important;
     }
+
     .Form__inner-input>input {
         width: 345px;
         height: 40px;
     }
+
     .footer__wrapper {
         gap: 0 30px;
     }
@@ -764,21 +784,25 @@ margin-right: -44px !important;
     .Popular_img {
         width: 150px;
     }
-    .Form__img{
-     width: 300px;
+
+    .Form__img {
+        width: 300px;
     }
+
     .Form__title {
-    font-size: 28px;
+        font-size: 28px;
     }
+
     .Form__inner-input>input {
         font-size: 16px;
         width: 300px;
         height: 35px;
     }
+
     .footer__wrapper {
         gap: 0 0;
     }
-    
+
 
 }
 
@@ -854,43 +878,53 @@ margin-right: -44px !important;
     .Partners_img {
         width: 145px;
     }
+
     .Form__img {
         width: 250px;
     }
+
     .Form__title {
         font-size: 25px;
         margin-bottom: 10px;
     }
+
     .Form__text {
         font-size: 12px;
     }
+
     .Form__inner-input>input {
         font-size: 12px;
         height: 30px;
     }
-    .Form__checkbox{
+
+    .Form__checkbox {
         margin-top: 0;
     }
-    .Form__button > button {
+
+    .Form__button>button {
         width: 120px;
         height: 40px;
         font-size: 14px;
     }
-    .Form_wrapper{
+
+    .Form_wrapper {
         flex-wrap: wrap;
         height: 480px;
     }
-    .footer__wrapper{
+
+    .footer__wrapper {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .footer__inner-list{
+
+    .footer__inner-list {
         display: none;
     }
+
     .footer_inner-title {
         font-size: 15px;
     }
-    
+
 }
 
 @media(max-width:420px) {
@@ -915,23 +949,25 @@ margin-right: -44px !important;
     .catalog_card {
         width: 165px;
     }
-    .footer_rights{
+
+    .footer_rights {
         font-size: 10px;
     }
-    .footer_rights{
+
+    .footer_rights {
         font-size: 10px;
     }
 
 
 }
 
-@media(max-width:400px) {
+@media(max-width:414px) {
     .header_logo-img {
-        width: 96px;
+        width: 120px;
     }
 
     .img_top {
-        width: 330px;
+        width: 350px;
     }
 
     .search_screen>input {
@@ -959,10 +995,10 @@ margin-right: -44px !important;
     }
 
     .swiper_button-info {
-        left: 13%;
+        left: 45px;
         width: 35px;
         height: 12px;
-        font-size: 6px;
+        font-size: 5px;
     }
 
     .Popular_img {
@@ -1013,7 +1049,8 @@ margin-right: -44px !important;
         top: 25px;
         left: -80px;
     }
-    .footer__wrapper{
+
+    .footer__wrapper {
         display: flex;
         flex-wrap: wrap;
     }
