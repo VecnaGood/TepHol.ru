@@ -553,6 +553,9 @@ margin-right: -44px !important;
     .search__buttone {
         display: none;
     }
+    .menu__inner-networks{
+        display: none;
+    }
 }
 
 
@@ -701,6 +704,10 @@ margin-right: -44px !important;
     .footer__wrapper {
         gap: 0 30px;
     }
+    .menu__inner-networks{
+        display: flex;
+    }
+    
 }
 
 
