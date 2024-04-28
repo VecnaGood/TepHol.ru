@@ -17,20 +17,19 @@
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
         integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
 </head>
-
 <body>
     <header class="header">
         <div class="container">
             <div class="header_wrapper">
                 <div class="header_logo">
-                    <img class="header_logo-img" src="images/logo.svg" alt="">
+                    <a href="#"><img class="header_logo-img" src="images/logo.svg" alt=""></a>
                 </div>
                 <div class="address">
                     <p class="address_text">г. Омск, ул. Карла Маркса д.16</p>
                 </div>
                 <div class="search_screen">
                     <input type="text" placeholder="Поиск...">
-                    <button class="search_buttone-screen"></button>
+                    <button type="reset" class="search_buttone-screen"></button>
                 </div>
                 <div class="phone">
                     <a href="tel:+88000000000">8 800 000 00 00</a>
@@ -38,21 +37,20 @@
                 <div class="header_buttone">
                     <button type="submit" class="header_buttone-inner">Обратная связь</button>
                 </div>
-                <div class="buutone__menu_item">
+                <div class="button__menu_item">
                     <button class="search__buttone">
                         <img src="images/glass_mobail.png" alt="">
                     </button>
                     <button class="menu_btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span class="menu_btn_item_one"></span>
+                        <span class="menu_btn_item_two"></span>
+                        <span class="menu_btn_item_three"></span>
                     </button>
                 </div>
             </div>
             <nav class="header_inner">
                 <ul class="header_item">
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Каталог</a>
+                    <li><a class="header_item_buttone" href="#">Каталог<img class="header_item_buttone" src="images/bottom.png"></a>
                         <ul class="menu_list">
                             <li><a href="#">Кондиционеры</a></li>
                             <li><a href="#">Вентиляция</a></li>
@@ -60,12 +58,12 @@
                             <li><a href="#">Тепловые насосы</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Установка кондиционеров</a></li>
+                    <li><a href="Installation_conditioners.html">Установка кондиционеров</a></li>
                     <li><a href="#">Монтаж вентиляции</a> </li>
-                    <li><a href="#">Выставочный зал</a></li>
-                    <li><a href="#">Оплата и доставка</a></li>
-                    <li><a href="#">Гарантии</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="Payment.html">Оплата и доставка</a></li>
+                    <li><a href="Guarantees.html">Гарантии</a></li>
+                    <li><a href="#">Специальные предложения</a></li>
+                    <li><a href="Contacts.html">Контакты</a></li>
                     <div class="menu__inner-networks">
                         <a href="#"><img src="images/whatsapp_logo.svg" alt="whatsapp"></a>
                         <a href="#"><img src="images/vk_logo.svg" alt="vk"></a>
@@ -82,20 +80,20 @@
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <button class="swiper_button-info">Подробнее</button>
-                                <a href="#"><img class="img_top" src="images/main.jpg" alt=""></a>
+                                <a href="#"><button class="swiper_button-info">Подробнее</button></a>
+                                <img class="img_top" src="images/main.jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <button class="swiper_button-info">Подробнее</button>
-                                <a href="#"><img class="img_top" src="images/main_2.jpg" alt=""></a>
+                                <a href="#"><button class="swiper_button-info">Подробнее</button></a>
+                                <img class="img_top" src="images/main_2.jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <button class="swiper_button-info">Подробнее</button>
-                                <a href="#"><img class="img_top" src="images/main_3.jpg" alt=""></a>
+                                <a href="#"><button class="swiper_button-info">Подробнее</button></a>
+                                <img class="img_top" src="images/main_3.jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <button class="swiper_button-info">Подробнее</button>
-                                <a href="#"><img class="img_top" src="images/main_4.jpg" alt=""></a>
+                                <a href="#"><button class="swiper_button-info">Подробнее</button></a>
+                                <img class="img_top" src="images/main_4.jpg" alt="">
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -207,8 +205,8 @@
         </section>
         <section class="Partners">
             <div class="container">
-                <div class="Partners_inner">
-                    <h2 class="Partners_title">
+                <div class="Partners_wrapper">
+                    <h2 class="Partners_title Title">
                         Наши партнеры
                     </h2>
                     <div class="swiper mySwiper_Partners">
@@ -251,9 +249,9 @@
                         <img class="Form__img" src="images/form.jpg" alt="#">
                     </div>
                     <form class="Form__inner" action="#">
-                        <h3 class="Form__title">Остались вопросы?</h3>
+                        <h3 class="Form__title Title">Остались вопросы?</h3>
                         <p class="Form__text">Мы свяжемся с вами в течении 15 минут</p>
-                        <div class="Form__inner-input">
+                        <div class="Form__inner-item">
                             <input type="text" name="username" placeholder="Ваше Имя">
                             <input type="tel" name="userphone" placeholder="Телефон">
                         </div>
@@ -278,11 +276,8 @@
                 </div>
                 <div class="footer_inner-info">
                     <ul class="footer_inner-list">
-                        <li class="footer_inner-title"><a href="#">О компании</a></li>
-                        <li class="footer__company-item"><a href="#">О нас</a></li>
-                        <li class="footer__company-item"><a href="#">Установка кондиционеров</a></li>
-                        <li class="footer__company-item"><a href="#">Монтаж вентиляция</a></li>
-                        <li class="footer__company-item"><a href="#">Выставочный зал</a></li>
+                        <li class="footer__company-item"><a href="Installation_conditioners.html">Установка кондиционеров</a></li>
+                        <li class="footer__company-item"><a href="Mounting.html">Монтаж вентиляция</a></li>
                     </ul>
                 </div>
                 <div class="footer__company-inner footer__inner-list">
@@ -296,9 +291,9 @@
                 </div>
                 <div class="footer_inner-info">
                     <ul class="footer_inner-list">
-                        <li class="footer__company-item"><a href="#">Оплата и доставка</a></li>
-                        <li class="footer__company-item"><a href="#">Гарантии</a></li>
-                        <li class="footer__company-item"><a href="#">Контакты</a></li>
+                        <li class="footer__company-item"><a href="Payment.html">Оплата и доставка</a></li>
+                        <li class="footer__company-item"><a href="Guarantees.html">Гарантии</a></li>
+                        <li class="footer__company-item"><a href="Contacts.html">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="footer_inner-connection">
@@ -324,4 +319,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
