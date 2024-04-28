@@ -129,7 +129,8 @@ ul {
     flex-direction: column;
     justify-content: space-between;
 }
-.menu_btn:active{
+
+.menu_btn:active {
     background-color: inherit;
 }
 
@@ -782,6 +783,7 @@ img {
     .header_item {
         gap: 0 35px;
     }
+
     .Contacts_inner {
         width: 1050px;
         margin-bottom: 80px;
@@ -946,6 +948,7 @@ img {
     .Installation_inner-button {
         width: 800px;
     }
+
     .Contacts_inner {
         width: 850px;
     }
@@ -1063,9 +1066,11 @@ img {
         height: 60px;
         font-size: 18px;
     }
+
     .Contacts_inner {
         width: 740px;
     }
+
     .Contacts_inner-item>a {
         margin-left: 10px;
         font-size: 18px;
@@ -1114,11 +1119,12 @@ img {
         left: 200px !important;
     }
 
-    .swiper_button-info { 
+    .swiper_button-info {
         left: 12%;
         width: 50px;
         height: 18px;
         font-size: 8px;
+        top: 115px;
     }
 
     .swiper_button-info {
@@ -1240,23 +1246,128 @@ img {
         margin-left: 10px;
         padding: 0;
     }
-    .Payment_text{
+
+    .Payment_text {
         font-size: 16px;
     }
+
     .Payment_list>li {
         margin-bottom: 5px;
     }
-    .Contacts_inner{
+
+    .Contacts_inner {
         display: block;
         text-align: center;
     }
-    .Contacts_inner-item{
-       margin: 20px 0 25px;
+
+    .Contacts_inner-item {
+        margin: 20px 0 25px;
     }
+
     .Contacts_inner {
         width: 450px;
     }
-    
+
+}
+
+@media(max-width:460px) {
+    .header_wrapper {
+        margin: 0;
+    }
+
+    .header_logo-img {
+        width: 125px;
+    }
+
+    .img_top {
+        width: 390px;
+    }
+
+    .img_top {
+        width: 390px;
+    }
+    .swiper_button-info {
+        left: 45px;
+        top: 110px;
+    }
+    .search_screen>input {
+        width: 180px;
+        height: 30px;
+        top: -15px;
+        left: -50px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-fraction {
+        top: auto !important;
+        left: 170px !important;
+    }
+
+    .catalog_card-img {
+        width: 160px;
+    }
+
+    .catalog_card {
+        width: 165px;
+    }
+
+    .footer_rights {
+        font-size: 10px;
+    }
+
+    /*Installation_conditioners--Установка кондиционеров*/
+    .Installation_title {
+        font-size: 24px;
+    }
+
+    .Installation_list-link {
+        font-size: 14px;
+    }
+
+    .Installation_inner-text {
+        font-size: 14px;
+    }
+
+    .Installation_inner-button {
+        width: 350px;
+        height: 60px;
+        font-size: 16px;
+    }
+
+    .closs_list--menu_two {
+        height: 400px;
+    }
+
+    .closs_list--menu_three {
+        height: 300px;
+    }
+
+    .closs_list--menu_four {
+        height: 600px;
+    }
+
+    .closs_list--menu_five {
+        height: 200px;
+    }
+
+    /* Payment--Оплата и доставка */
+    .Payment_list {
+        margin-left: 20px;
+    }
+
+    .Payment_title {
+        margin-top: 35px;
+    }
+
+    .Payment_text {
+        font-size: 14px;
+    }
+
+    .Contacts_inner {
+        width: 400px;
+    }
+
+
 }
 
 @media(max-width:420px) {
@@ -1331,16 +1442,20 @@ img {
     .closs_list--menu_five {
         height: 200px;
     }
+
     /* Payment--Оплата и доставка */
     .Payment_list {
         margin-left: 20px;
     }
+
     .Payment_title {
         margin-top: 35px;
     }
+
     .Payment_text {
         font-size: 14px;
     }
+
     .Contacts_inner {
         width: 400px;
     }
@@ -1349,7 +1464,7 @@ img {
 
 }
 
-@media(max-width:414px) {
+@media(max-width:415px) {
     .header_logo-img {
         width: 125px;
     }
@@ -1381,10 +1496,11 @@ img {
     }
 
     .swiper_button-info {
-        left: 45px;
-        width: 35px;
-        height: 12px;
-        font-size: 5px;
+        left: 42px;
+        width: 50px;
+        height: 16px;
+        font-size: 8px;
+        top: 110px;
     }
 
     .Popular_img {
@@ -1402,10 +1518,12 @@ img {
     .Title {
         font-size: 16px;
     }
+
     .Guarantees_title {
         font-size: 32px;
     }
-    .Guarantees_span{
+
+    .Guarantees_span {
         font-size: 16px;
     }
 
@@ -1420,6 +1538,7 @@ img {
         width: 340px;
         height: 55px;
     }
+
     .Contacts_inner {
         width: 350px;
     }
@@ -1431,19 +1550,25 @@ img {
         width: 330px;
         height: 135px;
     }
-    .swiper_slide-Popular {
-        margin-right: 10px !important; 
-        margin-left: 0 !important;
-    }
     .swiper_button-info {
         left: 40px;
-        top:105px;
+        top: 105px;
     }
+
     .catalog_card {
         width: 150px;
     }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-fraction {
+        left: 155px !important;
+    }
+    .Installation_inner-button {
+        width: 325px;
+        height: 50px;
+        font-size: 14px;
+    }
 
 }
+
 @media(max-width:380px) {
     .header_logo-img {
         width: 100px;
@@ -1660,6 +1785,7 @@ img {
     .closs_list--menu_four {
         height: 400px;
     }
+
     .Contacts_inner {
         width: 290px;
     }
