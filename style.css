@@ -1286,10 +1286,12 @@ img {
     .img_top {
         width: 390px;
     }
+
     .swiper_button-info {
         left: 45px;
         top: 110px;
     }
+
     .search_screen>input {
         width: 180px;
         height: 30px;
@@ -1545,11 +1547,18 @@ img {
 
 }
 
+@media (max-width: 435px) {
+    .img_top {
+        width: 370px;
+    }
+}
+
 @media(max-width:400px) {
     .img_top {
         width: 330px;
         height: 135px;
     }
+
     .swiper_button-info {
         left: 40px;
         top: 105px;
@@ -1558,9 +1567,12 @@ img {
     .catalog_card {
         width: 150px;
     }
-    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-fraction {
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-fraction {
         left: 155px !important;
     }
+
     .Installation_inner-button {
         width: 325px;
         height: 50px;
