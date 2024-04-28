@@ -1368,9 +1368,14 @@ img {
     .Contacts_inner {
         width: 400px;
     }
-
-
+    
 }
+    @media (max-width: 435px) {
+        .img_top {
+            width: 370px;
+        }
+    }
+
 
 @media(max-width:420px) {
     .header_wrapper {
@@ -1473,7 +1478,7 @@ img {
 
     .img_top {
         width: 350px;
-        height: 145px;
+        height: 135px;
     }
 
     .search_screen>input {
@@ -1547,11 +1552,6 @@ img {
 
 }
 
-@media (max-width: 435px) {
-    .img_top {
-        width: 370px;
-    }
-}
 
 @media(max-width:400px) {
     .img_top {
