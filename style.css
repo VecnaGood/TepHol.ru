@@ -799,7 +799,17 @@ img {
 
 
 
-
+@media (hover: hover){
+    .catalog_card:hover{
+    box-shadow: 0px 5px 10px 2px #6AAAE5;
+    transition: 0.5s;
+    }
+}
+@media (hover:none){
+    .catalog_card:active{
+    box-shadow: 0px 5px 10px 2px #6AAAE5;
+    }
+}
 
 
 @media(max-width:2100px) {
