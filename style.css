@@ -67,48 +67,33 @@ ul {
 }
 
 .menu_list {
-    max-width: 120px;
-    font-size: 13px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 1px solid #797979;
+    text-align: left;
     padding: 0;
     position: absolute;
-    transform-origin: 0 0;
-    transform: rotateX(-90deg);
-    visibility: hidden;
-    border-radius: 50%;
-    opacity: 0;
-    z-index: 3;
+    z-index: 2;
+    display: none;
 
 }
 
-.menu_list li {
-    position: relative;
-}
+.header__list--open {
+    display: block;
 
-.menu_list
-.menu_list {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
 }
 
 .menu_list a {
     width: 200px;
-    padding: 10px 20px;
-    background-color: #ffffff;
+    padding: 10px 15px;
     color: #000000;
 }
-.menu__inner-networks{
+
+
+.menu__inner-networks {
     display: flex;
     margin-top: 15px;
     gap: 0 10px;
-}
-
-.header_item li:hover>.menu_list {
-    opacity: 1;
-    visibility: visible;
-    transform: rotateX(0deg);
 }
 
 .header_buttone-inner {
@@ -124,7 +109,6 @@ ul {
     background-color: #6AAAE5;
     border: 2px solid white;
     color: white;
-    transition-duration: 0.5s;
 }
 
 .header_item {
@@ -146,11 +130,32 @@ ul {
     justify-content: space-between;
 }
 
-.menu_btn span {
+.menu_btn_item_one,
+.menu_btn_item_two,
+.menu_btn_item_three {
     background-color: black;
     width: 100%;
-    height: 2px;
+    height: 1.5px;
     border-radius: 20px;
+}
+
+.menu_btn_active:nth-child(1) {
+    transform: rotate(45deg);
+    transition-duration: 0.5s;
+    width: 25px;
+    margin-top: 6px;
+}
+
+.menu_btn_active:nth-child(2) {
+    display: none;
+    transition-duration: 0.5s;
+}
+
+.menu_btn_active:nth-child(3) {
+    transform: rotate(135deg);
+    transition-duration: 0.5s;
+    width: 25px;
+    margin-bottom: 7px;
 }
 
 .search_screen {
@@ -269,6 +274,10 @@ ul {
     background-color: #ffffff !important;
 }
 
+.Title {
+    font-size: 32px;
+}
+
 .top_dignities {
     display: flex;
     justify-content: space-between;
@@ -279,11 +288,9 @@ ul {
 }
 
 .top_inner-text {
-    margin: 20px 20px;
-}
-
-.top-text {
-    margin: 29px 20px;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
 }
 
 .top_inner-img {
@@ -358,10 +365,7 @@ ul {
     width: 200px;
 }
 
-/* .swiper
-.mySwiper_Partners, .swiper-initialized,.swiper-horizontal, .swiper-backface-hidden{
-margin-right: -44px !important;
-} */
+
 .Form_wrapper {
     display: flex;
     justify-content: space-around;
@@ -382,7 +386,6 @@ margin-right: -44px !important;
     margin-top: 0;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 32px;
 }
 
 .Form__text {
@@ -391,7 +394,7 @@ margin-right: -44px !important;
     color: #8f8f8f;
 }
 
-.Form__inner-input>input {
+.Form__inner-item>input {
     width: 417px;
     height: 47px;
     margin-bottom: 15px;
@@ -400,7 +403,7 @@ margin-right: -44px !important;
     border: 2px solid rgba(73, 132, 197, 0.2);
 }
 
-.Form__inner-input>p:focus {
+.Form__inner-item>p:focus {
     border: 1px solid #6AAAE5;
 }
 
@@ -454,6 +457,10 @@ margin-right: -44px !important;
     margin-bottom: 20px;
 }
 
+.footer_container {
+    margin-bottom: 0;
+}
+
 .inner__connection-list {
     margin: 0;
 }
@@ -475,7 +482,257 @@ margin-right: -44px !important;
 .footer_rights {
     display: flex;
     gap: 0 75px;
+    margin-bottom: 35px;
 }
+
+/* The end index.html */
+/* Payment.html */
+.Payment_wrapper {
+    line-height: 1.5;
+}
+
+.Payment_list-item::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #6cb4f7;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.Payment_list {
+    font-size: 16px;
+}
+
+
+
+/* Guarantees.html */
+.Guarantees_span {
+    font-weight: 600;
+}
+
+.Guarantees_wrapper {
+    line-height: 1.5;
+}
+
+/* Contacts.html */
+.Contacts_inner-item>a {
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.Contacts_inner-item {
+    display: flex;
+    align-items: center;
+}
+
+.Contacts_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 1200px;
+    height: 200px;
+    border-radius: 30px;
+    gap: 0 25px;
+}
+
+/*Mounting.html */
+.Mounting_text {
+    font-size: 16px;
+}
+
+.Mounting_inner {
+    line-height: 1.5;
+}
+
+/*Installation_conditioners.html */
+.Installation_title {
+    text-align: center;
+}
+
+.Installation_inner-blok {
+    background-color: #fff;
+    height: auto;
+    border-radius: 30px;
+    padding: 20px 20px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.Installation_inner-title {
+    font-size: 20px;
+    color: #69A8E4;
+    margin: 0;
+}
+
+.Installation_inner-text {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+}
+
+.Installation_list-link,
+.Installation_item-text {
+    margin: 5px 5px;
+    font-size: 16px;
+}
+
+.Installation_list-item {
+    padding: 0;
+}
+
+.Installation_list-link::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #69A8E4;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.inner_text-item {
+    color: #797979;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.Installation_inner-button {
+    width: 900px;
+    font-size: 20px;
+    display: flex;
+    text-align: left;
+    border-radius: 30px;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    color: #5E9CD9;
+    background-color: #fff;
+    border: 2px solid #69A8E4;
+}
+
+.Installation_blok-item {
+    height: 100%;
+}
+
+/* Installation_list_one */
+.Installation_list {
+    transition-duration: 0.5s;
+    display: none;
+}
+
+.closs_list--menu {
+    transition-duration: 0.5s;
+    display: block;
+    height: 250px;
+    visibility: visible;
+}
+
+.list_btn,
+img {
+    transition-duration: 0.5s;
+}
+
+.list--img {
+    transition-duration: 0.5s;
+    transform: rotate(-45deg);
+}
+
+/* Installation_list_two */
+.Installation_list_two {
+    transition-duration: 0.5s;
+    display: none;
+}
+
+.closs_list--menu_two {
+    transition-duration: 0.5s;
+    display: block;
+    height: 250px;
+    visibility: visible;
+}
+
+.list_btn_two,
+img {
+    transition-duration: 0.5s;
+}
+
+.list--img_two {
+    transition-duration: 0.5s;
+    transform: rotate(-45deg);
+}
+
+/* Installation_list_three */
+.Installation_list_three {
+    transition-duration: 0.5s;
+    display: none;
+}
+
+.closs_list--menu_three {
+    transition-duration: 0.5s;
+    display: block;
+    height: 120px;
+    visibility: visible;
+}
+
+.list_btn_three,
+img {
+    transition-duration: 0.5s;
+}
+
+.list--img_three {
+    transition-duration: 0.5s;
+    transform: rotate(-45deg);
+}
+
+/* Installation_list_four */
+.Installation_list_four {
+    transition-duration: 0.5s;
+    display: none;
+}
+
+.closs_list--menu_four {
+    transition-duration: 0.5s;
+    display: block;
+    height: 270px;
+    visibility: visible;
+}
+
+.list_btn_four,
+img {
+    transition-duration: 0.5s;
+}
+
+.list--img_four {
+    transition-duration: 0.5s;
+    transform: rotate(-45deg);
+}
+
+/* Installation_list_five */
+.Installation_list_five {
+    transition-duration: 0.5s;
+    display: none;
+}
+
+.closs_list--menu_five {
+    transition-duration: 0.5s;
+    display: block;
+    height: 100px;
+    visibility: visible;
+}
+
+.list_btn_five,
+img {
+    transition-duration: 0.5s;
+}
+
+.list--img_five {
+    transition-duration: 0.5s;
+    transform: rotate(-45deg);
+}
+
 
 
 
@@ -553,11 +810,25 @@ margin-right: -44px !important;
     .search__buttone {
         display: none;
     }
-    .menu__inner-networks{
+
+    .menu__inner-networks {
         display: none;
     }
 }
 
+@media(max-width:1200px) {
+    .header_item {
+        gap: 0 35px;
+    }
+    .Contacts_inner {
+        width: 1050px;
+        margin-bottom: 80px;
+    }
+
+    .header_wrapper {
+        gap: 0 30px;
+    }
+}
 
 @media(max-width:1290px) {
     body {
@@ -647,7 +918,7 @@ margin-right: -44px !important;
         left: -80px;
     }
 
-    .buutone__menu_item {
+    .button__menu_item {
         display: flex;
         gap: 0 20px;
         align-items: center;
@@ -696,7 +967,7 @@ margin-right: -44px !important;
         margin-right: 15px !important;
     }
 
-    .Form__inner-input>input {
+    .Form__inner-item>input {
         width: 345px;
         height: 40px;
     }
@@ -704,10 +975,20 @@ margin-right: -44px !important;
     .footer__wrapper {
         gap: 0 30px;
     }
-    .menu__inner-networks{
+
+    .menu__inner-networks {
         display: flex;
     }
-    
+
+    /*Installation_conditioners--Установка кондиционеров*/
+    .Installation_inner-button {
+        width: 800px;
+    }
+    .Contacts_inner {
+        width: 850px;
+    }
+
+
 }
 
 
@@ -804,7 +1085,7 @@ margin-right: -44px !important;
         font-size: 28px;
     }
 
-    .Form__inner-input>input {
+    .Form__inner-item>input {
         font-size: 16px;
         width: 300px;
         height: 35px;
@@ -812,6 +1093,20 @@ margin-right: -44px !important;
 
     .footer__wrapper {
         gap: 0 0;
+    }
+
+    /*Installation_conditioners--Установка кондиционеров*/
+    .Installation_inner-button {
+        width: 690px;
+        height: 60px;
+        font-size: 18px;
+    }
+    .Contacts_inner {
+        width: 740px;
+    }
+    .Contacts_inner-item>a {
+        margin-left: 10px;
+        font-size: 18px;
     }
 
 
@@ -834,12 +1129,17 @@ margin-right: -44px !important;
         width: 25px;
     }
 
-    .search_screen>input {
-        width: 220px;
-        top: 17px;
-        left: -77px;
+    .menu_list a {
+        width: 180px;
         font-size: 12px;
-        z-index: 2;
+    }
+
+    .search_screen>input {
+        width: 215px;
+        top: -18px;
+        height: 35px;
+        left: -68px;
+        font-size: 14px;
     }
 
     .img_top {
@@ -850,7 +1150,6 @@ margin-right: -44px !important;
     .swiper-pagination-fraction {
         top: 135px !important;
         left: 200px !important;
-        width: 100%;
     }
 
     .swiper_button-info {
@@ -903,7 +1202,7 @@ margin-right: -44px !important;
         font-size: 12px;
     }
 
-    .Form__inner-input>input {
+    .Form__inner-item>input {
         font-size: 12px;
         height: 30px;
     }
@@ -936,11 +1235,75 @@ margin-right: -44px !important;
         font-size: 15px;
     }
 
+    /*Installation_conditioners--Установка кондиционеров*/
+    .Installation_inner-button {
+        width: 400px;
+        height: 65px;
+        line-height: 1.4;
+    }
+
+    .closs_list--menu {
+        height: 370px;
+    }
+
+    .closs_list--menu_two {
+        height: 370px;
+    }
+
+    .closs_list--menu_three {
+        height: 200px;
+    }
+
+    .closs_list--menu_four {
+        height: 450px;
+    }
+
+    #list_img,
+    #list_img_two,
+    #list_img_three,
+    #list_img_four,
+    #list_img_five {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Payment--Оплата и доставка */
+    .Payment_title {
+        font-size: 30px;
+    }
+
+    .Payment_list {
+        font-size: 14px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        padding: 0;
+    }
+    .Payment_text{
+        font-size: 16px;
+    }
+    .Payment_list>li {
+        margin-bottom: 5px;
+    }
+    .Contacts_inner{
+        display: block;
+        text-align: center;
+    }
+    .Contacts_inner-item{
+       margin: 20px 0 25px;
+    }
+    .Contacts_inner {
+        width: 450px;
+    }
+    
 }
 
 @media(max-width:420px) {
+    .header_wrapper {
+        margin: 0;
+    }
+
     .header_logo-img {
-        width: 96px;
+        width: 125;
     }
 
     .img_top {
@@ -948,9 +1311,16 @@ margin-right: -44px !important;
     }
 
     .search_screen>input {
-        width: 200px;
-        top: 25px;
-        left: -69px;
+        width: 180px;
+        height: 30px;
+        top: -15px;
+        left: -50px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-fraction {
+        top: auto !important;
+        left: 170px !important;
     }
 
     .catalog_card-img {
@@ -965,9 +1335,54 @@ margin-right: -44px !important;
         font-size: 10px;
     }
 
-    .footer_rights {
-        font-size: 10px;
+    /*Installation_conditioners--Установка кондиционеров*/
+    .Installation_title {
+        font-size: 24px;
     }
+
+    .Installation_list-link {
+        font-size: 14px;
+    }
+
+    .Installation_inner-text {
+        font-size: 14px;
+    }
+
+    .Installation_inner-button {
+        width: 350px;
+        height: 60px;
+        font-size: 16px;
+    }
+
+    .closs_list--menu_two {
+        height: 400px;
+    }
+
+    .closs_list--menu_three {
+        height: 300px;
+    }
+
+    .closs_list--menu_four {
+        height: 600px;
+    }
+
+    .closs_list--menu_five {
+        height: 200px;
+    }
+    /* Payment--Оплата и доставка */
+    .Payment_list {
+        margin-left: 20px;
+    }
+    .Payment_title {
+        margin-top: 35px;
+    }
+    .Payment_text {
+        font-size: 14px;
+    }
+    .Contacts_inner {
+        width: 400px;
+    }
+
 
 
 }
@@ -991,7 +1406,7 @@ margin-right: -44px !important;
 
     .swiper-horizontal>.swiper-pagination-bullets,
     .swiper-pagination-fraction {
-        top: 130px !important;
+        top: auto !important;
         left: 160px !important;
     }
 
@@ -1025,17 +1440,41 @@ margin-right: -44px !important;
     .Title {
         font-size: 16px;
     }
+    .Guarantees_title {
+        font-size: 32px;
+    }
+    .Guarantees_span{
+        font-size: 16px;
+    }
+
     .inner__connection-phone {
         display: flex;
         font-size: 14px;
         margin-left: 10px;
     }
 
+    /*Installation_conditioners--Установка кондиционеров*/
+    .Installation_inner-button {
+        width: 340px;
+        height: 55px;
+    }
+    .Contacts_inner {
+        width: 350px;
+    }
+
 }
 
 @media(max-width:380px) {
     .header_logo-img {
-        width: 96px;
+        width: 100px;
+    }
+
+    .container {
+        margin-bottom: 0;
+    }
+
+    .search__buttone>img {
+        width: 25px;
     }
 
     .img_top {
@@ -1045,7 +1484,7 @@ margin-right: -44px !important;
 
     .swiper-horizontal>.swiper-pagination-bullets,
     .swiper-pagination-fraction {
-        top: 105px !important;
+        top: auto !important;
         left: 145px !important;
     }
 
@@ -1063,10 +1502,10 @@ margin-right: -44px !important;
     }
 
     .search_screen>input {
-        width: 185px;
-        height: 30px;
-        top: 17px;
-        left: -60px;
+        width: 160px;
+        height: 27px;
+        top: -14px;
+        left: -48px
     }
 
     .catalog_card {
@@ -1078,19 +1517,172 @@ margin-right: -44px !important;
         flex-wrap: wrap;
     }
 
-    .footer_inner-connection {
-        display: flex;
-        align-items: center;
-    }
-
     .inner__connection-phone {
         align-items: center;
         justify-content: center;
         display: flex;
         margin-left: 0;
     }
+
     .footer_rights {
         display: flex;
         gap: 0 50px;
     }
+
+    /*Installation_conditioners--Установка кондиционеров*/
+    .Installation_inner-title {
+        font-size: 16px;
+    }
+
+    .Installation_inner-blok {
+        padding: 10px 10px;
+    }
+
+    .Installation_inner-button {
+        width: 320px;
+        height: 50px;
+    }
+
+    .Installation_list,
+    .Installation_list_two,
+    .Installation_list_three,
+    .Installation_list_four,
+    .Installation_list_five {
+        padding: 0;
+    }
+
+    .closs_list--menu,
+    .closs_list--menu_two {
+        height: 320px;
+    }
+
+    .closs_list--menu_three {
+        height: 200px;
+    }
+
+    .closs_list--menu_four {
+        height: 400px;
+    }
+
+    .closs_list--menu_five {
+        height: 150px;
+    }
+
+    .Installation_list-link,
+    .Installation_item-text {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:370px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header_logo-img {
+        width: 100px;
+    }
+
+    .container {
+        margin-bottom: 0;
+    }
+
+    .search__buttone>img {
+        width: 25px;
+    }
+
+    .img_top {
+        width: 265px;
+    }
+
+    .swiper_button-info {
+        left: 35px;
+        width: 35px;
+        height: 12px;
+        font-size: 5px;
+        top: 85px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-fraction {
+        top: auto !important;
+        left: 145px !important;
+    }
+
+    .swiper-pagination-bullet {
+        width: 5px !important;
+        height: 5px !important;
+    }
+
+    .Form__checkbox {
+        font-size: 10px;
+    }
+
+    .search_screen>input {
+        width: 140px;
+        height: 27px;
+        top: -14px;
+        left: -48px
+    }
+
+    .catalog_card {
+        width: 120px;
+    }
+
+    .catalog_card-img {
+        width: 110px;
+    }
+
+    .Form__inner-item>input {
+        font-size: 10px;
+        width: 250px;
+    }
+
+    .Form__button>button {
+        width: 110px;
+        height: 35px;
+    }
+
+    .footer_inner-connection {
+        display: flex;
+        align-items: center;
+    }
+
+    .inner__connection-phone {
+        justify-content: left;
+    }
+
+    .footer_rights {
+        font-size: 8px;
+    }
+
+    /*Installation_conditioners--Установка кондиционеров*/
+
+    .Installation_inner-button {
+        width: 260px;
+        height: 65px;
+        font-size: 14px;
+    }
+
+    .Installation_list-link,
+    .Installation_item-text {
+        font-size: 12px;
+    }
+
+    .closs_list--menu,
+    .closs_list--menu_two {
+        height: 300px;
+    }
+
+    .closs_list--menu_three {
+        height: 200px;
+    }
+
+    .closs_list--menu_four {
+        height: 400px;
+    }
+    .Contacts_inner {
+        width: 290px;
+    }
+
 }
