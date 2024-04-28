@@ -1464,6 +1464,24 @@ img {
 
 }
 
+@media(max-width:400px) {
+    .img_top {
+        width: 330px;
+        height: 135px;
+    }
+    .swiper_slide-Popular {
+        margin-right: 10px !important; 
+        margin-left: 0 !important;
+    }
+    .swiper_button-info {
+        left: 40px;
+        top:105px;
+    }
+    .catalog_card {
+        width: 150px;
+    }
+
+}
 @media(max-width:380px) {
     .header_logo-img {
         width: 100px;
@@ -1606,7 +1624,7 @@ img {
     .swiper-horizontal>.swiper-pagination-bullets,
     .swiper-pagination-fraction {
         top: auto !important;
-        left: 145px !important;
+        left: 130px !important;
     }
 
     .swiper-pagination-bullet {
