@@ -761,57 +761,6 @@ img {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (hover: hover){
-    .catalog_card:hover{
-    box-shadow: 0px 5px 10px 2px #6AAAE5;
-    transition: 0.5s;
-    }
-}
-@media (hover:none){
-    .catalog_card:active{
-    box-shadow: 0px 5px 10px 2px #6AAAE5;
-    }
-}
-
-
 @media(max-width:2100px) {
     .swiper-pagination {
         display: none;
@@ -1162,10 +1111,10 @@ img {
         left: 200px !important;
     }
 
-    .swiper_button-info {
-        left: 11%;
+    .swiper_button-info { 
+        left: 12%;
         width: 50px;
-        height: 20px;
+        height: 18px;
         font-size: 8px;
     }
 
@@ -1627,7 +1576,6 @@ img {
         left: 35px;
         width: 35px;
         height: 12px;
-        font-size: 5px;
         top: 85px;
     }
 
