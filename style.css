@@ -113,9 +113,10 @@ ul {
 
 .header_item {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 0 40px;
     padding: 0;
-    margin-top: 24px;
 }
 
 .header_item>li:hover {
@@ -737,6 +738,37 @@ img {
     transform: rotate(-45deg);
 }
 
+/*Conditioner.html */
+.Conditioner_Product-inner {
+    display: flex;
+    gap: 0 50px;
+}
+
+.Conditioner_Product-card {
+    width: 260px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.Conditioner_Product-card:hover {
+    box-shadow: 0px 5px 10px 2px #6AAAE5;
+    transition: 0.5s;
+}
+
+.Conditioner_img {
+    width: 225px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.Conditioner_text {
+    font-size: 20px;
+    margin: 0;
+}
+
 
 
 
@@ -792,18 +824,17 @@ img {
     .header_wrapper {
         gap: 0 30px;
     }
-}
 
-@media(max-width:1290px) {
-    body {
-        font-size: 14px;
+    .Conditioner_Product-card {
+        width: 240px;
     }
 }
 
+
 @media(max-width:1024px) {
     .header_item {
-        gap: 0 25px;
-        padding: 0;
+        gap: 0 20px;
+        font-size: 14px;
     }
 
     .header_buttone-inner {
@@ -826,7 +857,7 @@ img {
     }
 
     .img_top {
-        width: 968px;
+        width: 975px;
         margin-left: 0;
     }
 
@@ -838,6 +869,10 @@ img {
         width: 165px;
     }
 
+    .Popular_title {
+        font-size: 16px;
+    }
+
     .swiper_slide-Popular {
         margin-right: 24px !important;
         margin-left: 20px !important;
@@ -846,6 +881,20 @@ img {
     .Partners_img {
         width: 150px;
     }
+
+    .Conditioner_Product-inner {
+        gap: 0 30px;
+    }
+
+    .Conditioner_img {
+        width: 180px;
+        height: 190px;
+    }
+
+    .Conditioner_text {
+        font-size: 18px;
+    }
+
 }
 
 @media(max-width:900px) {
@@ -951,6 +1000,26 @@ img {
 
     .Contacts_inner {
         width: 850px;
+    }
+
+    .Conditioner_Product-card {
+        width: 195px;
+        height: 250px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .Conditioner_img {
+        width: 170px;
+        height: 180px;
+    }
+
+    .Conditioner_text {
+        font-size: 16px;
+    }
+
+    .Conditioner_text {
+        font-size: 18px;
     }
 
 
@@ -1075,6 +1144,21 @@ img {
         margin-left: 10px;
         font-size: 18px;
     }
+
+    .Conditioner_Product-card {
+        width: 195px;
+        height: 220px;
+        padding: 10px;
+        gap: 0 30px;
+        text-align: center;
+    }
+    
+    .Conditioner_img {
+        width: 140px;
+        height: 140px;
+    }
+
+    
 
 
 }
@@ -1267,6 +1351,20 @@ img {
     .Contacts_inner {
         width: 450px;
     }
+    .Conditioner_Product-card {
+        width: 195px;
+        height: 220px;
+        margin-bottom: 20px;
+    }
+
+    .Conditioner_img {
+        width: 140px;
+        height: 140px;
+    }
+    .Conditioner_Product-inner {
+        gap: 0 50px;
+        flex-wrap: wrap;
+    }
 
 }
 
@@ -1368,13 +1466,29 @@ img {
     .Contacts_inner {
         width: 400px;
     }
-    
-}
-    @media (max-width: 435px) {
-        .img_top {
-            width: 370px;
-        }
+
+    .Conditioner_img {
+        height: 130px;
     }
+    .Conditioner_Product-inner {
+        gap: 0 30px;
+    }
+
+
+}
+
+@media (max-width: 440px) {
+    .img_top {
+        width: 370px;
+    }
+    .Conditioner_img {
+        height: 130px;
+    }
+    .Conditioner_Product-card {
+        width: 180px;
+        height: 200px;
+    }
+}
 
 
 @media(max-width:420px) {
@@ -1465,6 +1579,10 @@ img {
 
     .Contacts_inner {
         width: 400px;
+    }
+    .Conditioner_Product-card {
+        width: 170px;
+        height: 200px;
     }
 
 
@@ -1578,6 +1696,9 @@ img {
         height: 50px;
         font-size: 14px;
     }
+    .Conditioner_Product-card {
+        width: 165px;
+    }
 
 }
 
@@ -1688,6 +1809,9 @@ img {
     .Installation_list-link,
     .Installation_item-text {
         font-size: 14px;
+    }
+    .Conditioner_Product-card {
+        width: 155px;
     }
 }
 
@@ -1800,6 +1924,15 @@ img {
 
     .Contacts_inner {
         width: 290px;
+    }
+    .Conditioner_Product-card {
+        width: 125px;
+        padding: 0;
+        height: 165px;
+    }
+    .Conditioner_img {
+        width: 110px;
+        height: 100px;
     }
 
 }
