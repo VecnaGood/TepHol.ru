@@ -116,6 +116,7 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 0 40px;
+    font-size: clamp(14px,1vw);
     padding: 0;
 }
 
@@ -280,7 +281,7 @@ ul {
 }
 
 .Title {
-    font-size: 32px;
+    font-size: clamp(18px,1.5vw,2vw);
 }
 
 .top_dignities {
@@ -296,6 +297,7 @@ ul {
     display: flex;
     margin-left: 10px;
     align-items: center;
+    font-size: clamp(14px,1vw,1.2vw);
 }
 
 .top_inner-img {
@@ -442,7 +444,6 @@ ul {
 }
 
 .footer_inner-title {
-    font-size: 18px;
     margin-bottom: 25px;
 }
 
@@ -465,10 +466,6 @@ ul {
 
 .footer_container {
     margin-bottom: 0;
-}
-
-.inner__connection-list {
-    margin: 0;
 }
 
 .inner__connection-phone {
@@ -835,7 +832,6 @@ img {
 @media(max-width:1024px) {
     .header_item {
         gap: 0 20px;
-        font-size: 14px;
     }
 
     .header_buttone-inner {
@@ -871,7 +867,6 @@ img {
     }
 
     .Popular_title {
-        font-size: 18px;
         text-align: center;
     }
 
@@ -950,11 +945,6 @@ img {
     .buttone__search--active {
         display: flex !important;
     }
-
-    .top_inner-text {
-        margin: 20px 12px;
-    }
-
 
     .address {
         display: none;
@@ -1096,10 +1086,6 @@ img {
     }
 
 
-    .header_item {
-        display: none;
-    }
-
     .menu__list--open {
         display: block;
         line-height: 2.5;
@@ -1120,10 +1106,6 @@ img {
 
     .Form__img {
         width: 300px;
-    }
-
-    .Form__title {
-        font-size: 28px;
     }
 
     .Form__inner-item>input {
@@ -1249,7 +1231,6 @@ img {
     }
 
     .Form__title {
-        font-size: 25px;
         margin-bottom: 10px;
     }
 
@@ -1286,10 +1267,6 @@ img {
         display: none;
     }
 
-    .footer_inner-title {
-        font-size: 15px;
-    }
-
     /*Installation_conditioners--Установка кондиционеров*/
     .Installation_inner-button {
         width: 400px;
@@ -1323,9 +1300,6 @@ img {
     }
 
     /* Payment--Оплата и доставка */
-    .Payment_title {
-        font-size: 30px;
-    }
 
     .Payment_list {
         font-size: 14px;
@@ -1421,9 +1395,6 @@ img {
     }
 
     /*Installation_conditioners--Установка кондиционеров*/
-    .Installation_title {
-        font-size: 24px;
-    }
 
     .Installation_list-link {
         font-size: 14px;
@@ -1458,10 +1429,6 @@ img {
     /* Payment--Оплата и доставка */
     .Payment_list {
         margin-left: 20px;
-    }
-
-    .Payment_title {
-        margin-top: 35px;
     }
 
     .Payment_text {
@@ -1538,9 +1505,6 @@ img {
     }
 
     /*Installation_conditioners--Установка кондиционеров*/
-    .Installation_title {
-        font-size: 24px;
-    }
 
     .Installation_list-link {
         font-size: 14px;
@@ -1575,10 +1539,6 @@ img {
     /* Payment--Оплата и доставка */
     .Payment_list {
         margin-left: 20px;
-    }
-
-    .Payment_title {
-        margin-top: 35px;
     }
 
     .Payment_text {
@@ -1641,20 +1601,8 @@ img {
         width: 135px;
     }
 
-    .Popular_title {
-        font-size: 12px;
-    }
-
     .Partners_img {
         width: 130px;
-    }
-
-    .Title {
-        font-size: 16px;
-    }
-
-    .Guarantees_title {
-        font-size: 32px;
     }
 
     .Guarantees_span {
@@ -1775,9 +1723,6 @@ img {
     }
 
     /*Installation_conditioners--Установка кондиционеров*/
-    .Installation_inner-title {
-        font-size: 16px;
-    }
 
     .Installation_inner-blok {
         padding: 10px 10px;
@@ -1822,8 +1767,19 @@ img {
         width: 155px;
     }
 }
-
-@media(max-width:370px) {
+@media(max-width:370px){
+    .img_top {
+        width: 310px;
+    }
+    .swiper_button-info {
+        left: 40px;
+        width: 45px;
+        height: 14px;
+        top: 95px;
+        font-size: 7px;
+    }
+}
+@media(max-width:320px) {
     body {
         font-size: 14px;
     }
