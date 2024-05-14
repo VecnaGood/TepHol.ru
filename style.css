@@ -11,9 +11,6 @@ html {
 body {
     font-size: 16px;
     background-color: #F7F9FE;
-    /* font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: normal; */
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     margin: 0;
@@ -116,7 +113,7 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 0 40px;
-    font-size: clamp(14px,1vw);
+    font-size: clamp(14px, 1vw, 1.2VW);
     padding: 0;
 }
 
@@ -281,7 +278,7 @@ ul {
 }
 
 .Title {
-    font-size: clamp(18px,1.5vw,2vw);
+    font-size: clamp(20px, 1.5vw, 2vw);
 }
 
 .top_dignities {
@@ -297,7 +294,7 @@ ul {
     display: flex;
     margin-left: 10px;
     align-items: center;
-    font-size: clamp(14px,1vw,1.2vw);
+    font-size: clamp(14px, 1vw, 1.2vw);
 }
 
 .top_inner-img {
@@ -323,6 +320,10 @@ ul {
 .catalog_card:hover {
     box-shadow: 0px 5px 10px 2px #6AAAE5;
     transition: 0.5s;
+}
+
+.catalog_card-text {
+    font-size: clamp(12px, 1vw, 1.2vw);
 }
 
 .catalog_card-img {
@@ -535,15 +536,15 @@ ul {
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    width: 1200px;
     height: 200px;
     border-radius: 30px;
     gap: 0 25px;
 }
 
 /*Mounting.html */
+.Mounting_subtitle,
 .Mounting_text {
-    font-size: 16px;
+    font-size: clamp(14px, 1vw, 1.2vw);
 }
 
 .Mounting_inner {
@@ -868,6 +869,7 @@ img {
 
     .Popular_title {
         text-align: center;
+        font-size: clamp(14px, 1vw, 1.2vw);
     }
 
     .Popular_text {
@@ -1070,10 +1072,11 @@ img {
     }
 
     .swiper_button-info {
-        top: 65%;
-        left: 10%;
+        top: 70%;
+        left: 70px;
         width: 100px;
         height: 30px;
+        font-size: 14px;
     }
 
     .swiper-pagination-bullet {
@@ -1156,7 +1159,7 @@ img {
 
 }
 
-@media(max-width:500px) {
+@media(max-width:480px) {
     body {
         font-size: 12px;
     }
@@ -1267,10 +1270,13 @@ img {
         display: none;
     }
 
+    .footer_inner-connection {
+        margin-left: 26px;
+    }
+
     /*Installation_conditioners--Установка кондиционеров*/
     .Installation_inner-button {
         width: 400px;
-        height: 65px;
         line-height: 1.4;
     }
 
@@ -1327,6 +1333,8 @@ img {
 
     .Contacts_inner {
         width: 450px;
+        height: 210px;
+        padding: 1px 31px;
     }
 
     .Conditioner_Product-card {
@@ -1558,7 +1566,7 @@ img {
 
 }
 
-@media(max-width:415px) {
+@media(max-width:420px) {
     .header_logo-img {
         width: 125px;
     }
@@ -1594,7 +1602,7 @@ img {
         width: 50px;
         height: 16px;
         font-size: 8px;
-        top: 110px;
+        top: 90px;
     }
 
     .Popular_img {
@@ -1616,13 +1624,11 @@ img {
     }
 
     /*Installation_conditioners--Установка кондиционеров*/
-    .Installation_inner-button {
-        width: 340px;
-        height: 55px;
-    }
-
     .Contacts_inner {
         width: 350px;
+        width: 350px;
+        height: 210px;
+        padding: 1px 31px;
     }
 
 }
@@ -1695,10 +1701,10 @@ img {
     }
 
     .search_screen>input {
-        width: 160px;
-        height: 27px;
+        width: 140px;
+        height: 25px;
         top: -14px;
-        left: -48px
+        left: -42px;
     }
 
     .catalog_card {
@@ -1767,18 +1773,25 @@ img {
         width: 155px;
     }
 }
-@media(max-width:370px){
+
+@media(max-width:380px) {
+    .header_logo-img {
+        width: 120px;
+    }
+
     .img_top {
         width: 310px;
     }
+
     .swiper_button-info {
-        left: 40px;
+        left: 38px;
         width: 45px;
         height: 14px;
-        top: 95px;
+        top: 77px;
         font-size: 7px;
     }
 }
+
 @media(max-width:320px) {
     body {
         font-size: 14px;
@@ -1804,7 +1817,8 @@ img {
         left: 35px;
         width: 35px;
         height: 12px;
-        top: 85px;
+        top: 65px;
+        font-size: 6px;
     }
 
     .swiper-horizontal>.swiper-pagination-bullets,
@@ -1824,9 +1838,10 @@ img {
 
     .search_screen>input {
         width: 140px;
-        height: 27px;
-        top: -14px;
-        left: -48px
+        height: 25px;
+        top: 25px;
+        left: -48px;
+        z-index: 5;
     }
 
     .catalog_card {
@@ -1850,6 +1865,7 @@ img {
     .footer_inner-connection {
         display: flex;
         align-items: center;
+        gap: 0 20px;
     }
 
     .inner__connection-phone {
@@ -1890,6 +1906,11 @@ img {
         width: 290px;
     }
 
+    .Contacts_inner-item>a {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
     .Conditioner_Product-card {
         width: 125px;
         padding: 0;
@@ -1900,4 +1921,5 @@ img {
         width: 110px;
         height: 100px;
     }
+
 }
