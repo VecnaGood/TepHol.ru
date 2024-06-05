@@ -9,18 +9,10 @@ html {
 }
 
 body {
-    font-size: 16px;
-    background-color: #F7F9FE;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    margin: 0;
-
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: #1b1b1b;
+    line-height: 1.4;
 }
 
 button {
@@ -29,96 +21,26 @@ button {
     background-color: transparent;
 }
 
-ul {
-    list-style: none;
-}
-
-.container {
-    max-width: 1240px;
-    margin: 0 auto;
-    padding-right: 20px;
-    padding-left: 20px;
+.top {
     margin-bottom: 80px;
 }
 
-.header_wrapper {
+.container {
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header_inner {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 0 50px;
-}
-
-.address {
-    position: relative;
-}
-
-.address::before {
-    content: '';
-    position: absolute;
-    background-image: url(images/address.png);
-    background-repeat: no-repeat;
-    top: 17px;
-    bottom: 0;
-    right: 9px;
-    left: -15px;
-}
-
-.menu_list {
-    background-color: #fff;
-    border-radius: 30px;
-    border: 1px solid #797979;
-    text-align: left;
-    padding: 0;
-    position: absolute;
-    z-index: 2;
-    display: none;
-
-}
-
-.header__list--open {
-    display: block;
-
-}
-
-.menu_list a {
-    width: 200px;
-    padding: 10px 15px;
-    color: #000000;
-}
-
-
-.menu__inner-networks {
-    display: flex;
-    margin-top: 15px;
-    gap: 0 10px;
-}
-
-.header_buttone-inner {
-    background-color: inherit;
-    border: 2px solid #6AAAE5;
-    border-radius: 20px;
-    width: 160px;
-    height: 48px;
-    font-size: 17px;
-}
-
-.header_buttone-inner:hover {
-    background-color: #6AAAE5;
-    border: 2px solid white;
-    color: white;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .header_item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0 40px;
-    font-size: clamp(14px, 1vw, 1.2VW);
-    padding: 0;
-}
-
-.header_item>li:hover {
-    color: #6AAAE5;
+    display: none;
 }
 
 .menu_btn {
@@ -126,12 +48,9 @@ ul {
     width: 40px;
     flex-direction: column;
 }
-.menu_btn_img {
-    display: block;
-    height: auto;
-    flex-direction: column;
-    margin-bottom: 2px;
-    margin-top: 5px;
+
+.menu_btn:active {
+    background-color: inherit;
 }
 
 
@@ -144,7 +63,6 @@ ul {
 
 .menu_btn_active:nth-child(2) {
     display: none;
-    transition-duration: 0.5s;
 }
 
 .menu_btn_active:nth-child(3) {
@@ -155,611 +73,576 @@ ul {
     position: absolute;
 }
 
-.search_screen {
+.menu__list {
     display: flex;
-    position: relative;
-}
-
-.search_screen>input {
-    width: 265px;
-    height: 40px;
-    border: none;
-    background: #fff;
-    padding: 0 10px;
-    font-size: 16px;
-    color: #000000;
-    border-radius: 20px;
-    outline: 0;
-}
-
-
-
-.search_buttone-screen::before {
-    content: '';
-    position: absolute;
-    background-image: url(images/glass.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    top: 4px;
-    bottom: 0;
-    right: 0;
-    left: 230px;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    background-color: white;
-    border-radius: 20px;
-    z-index: 2;
-}
-
-.img_top {
-    width: 1200px;
-    border-radius: 20px;
-}
-
-.mySwiper {
-    position: relative;
-    margin-bottom: 40px;
-}
-
-.swiper-button-left {
-    position: absolute;
-    background-image: url(images/buttone_left.png);
-    background-repeat: no-repeat;
-    top: 80%;
-    bottom: 0;
-    right: 0;
-    left: 80%;
-    z-index: 1;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-}
-
-.swiper-button-right:hover {
-    background-image: url(images/buttone_prev-hover.png);
-    transition-duration: 0.5s;
-
-}
-
-.swiper-button-left:hover {
-    background-image: url(images/buttone_left-hover.png);
-    transition-duration: 0.5s;
-
-}
-
-.swiper-button-right {
-    position: absolute;
-    background-image: url(images/buttone_prev.png);
-    background-repeat: no-repeat;
-    top: 80%;
-    bottom: 0;
-    right: 46px;
-    left: 87%;
-    cursor: pointer;
-    z-index: 1;
-    width: 50px;
-    height: 50px;
-
-}
-
-.swiper_button-info {
-    position: absolute;
-    top: 71%;
-    bottom: 0;
-    right: 0;
-    left: 8%;
-    cursor: pointer;
-    z-index: 1;
-    width: 150px;
-    height: 48px;
-    border-radius: 28px;
-    background-color: inherit;
-    color: white;
-    border: 2px solid white;
-    font-size: 16px;
-}
-
-.swiper_button-info:hover {
-    background-color: #ffffff;
-    color: #6AAAE5;
-}
-
-
-.swiper-pagination-bullet,
-.swiper-pagination-bullet-active {
-    background-color: #ffffff !important;
-}
-
-.Title {
-    font-size: clamp(20px, 1.5vw, 2vw);
-}
-
-.top_dignities {
-    display: flex;
-    justify-content: space-between;
-}
-
-.top_dignities-inner {
-    display: flex;
-}
-
-.top_inner-text {
-    display: flex;
-    margin-left: 10px;
-    align-items: center;
-    font-size: clamp(14px, 1vw, 1.2vw);
-}
-
-.top_inner-img {
-    max-width: 80px;
-    max-height: 80px;
-}
-
-.inner-cataslog {
-    display: flex;
-    gap: 0 24px;
-    justify-content: center;
-    align-items: center;
-}
-
-.catalog_card {
-    background-color: #fff;
-    width: 280px;
-    text-align: center;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.catalog_card:hover {
-    box-shadow: 0px 5px 10px 2px #6AAAE5;
-    transition: 0.5s;
-}
-
-.catalog_card-text {
-    font-size: clamp(12px, 1vw, 1.2vw);
-}
-
-.catalog_card-img {
-    border-radius: 20px;
-}
-
-.Popular_inner {
-    margin-bottom: 80px;
-}
-
-.Popular_wrapper {
-    margin-bottom: 80px;
-}
-
-.Popular_btn-right {
-    top: 315px;
-    left: 1150px;
-}
-
-.Popular_btn-left {
-    top: 315px;
-    left: 1070px;
-}
-
-.swiper_slide-Popular {
-    text-align: center;
-    cursor: pointer;
-    border-radius: 20px;
-    background-color: rgb(255, 255, 255);
-}
-
-.Partners_wrapper {
-    margin-bottom: 80px;
-}
-
-.Partners_btn-right {
-    top: 100px;
-    left: 1150px;
-}
-
-.Partners_btn-left {
-    top: 100px;
-    left: 1070px;
-}
-
-.Partners_img {
-    width: 200px;
-}
-
-
-.Form_wrapper {
-    display: flex;
-    justify-content: space-around;
-    background-color: #fff;
-    align-items: center;
-    text-align: center;
-    height: 400px;
-    border-radius: 20px;
-}
-
-.Form__inner {
-    width: 400px;
-    height: 300px;
-}
-
-.Form__title {
-    margin-bottom: 32px;
-    margin-top: 0;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-}
-
-.Form__text {
-    font-size: 14px;
-    font-weight: 100;
-    color: #8f8f8f;
-}
-
-.Form__inner-item>input {
-    width: 417px;
-    height: 47px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    border-radius: 10px;
-    border: 2px solid rgba(73, 132, 197, 0.2);
-}
-
-.Form__inner-item>p:focus {
-    border: 1px solid #6AAAE5;
-}
-
-.Form__checkbox {
-    font-size: 12px;
-    color: #9F9F9F;
-    display: inline-block;
-}
-
-.Form__button>button {
-    background-color: #6AAAE5;
-    width: 147px;
-    height: 47px;
-    cursor: pointer;
-    margin: 0 auto;
-    display: block;
-    border-radius: 30px;
-    font-size: 16px;
-    color: #fff;
-}
-
-.Form__button>button:hover {
-    background-color: #fff;
-    border: 2px solid #6AAAE5;
-    color: #6AAAE5;
-}
-
-.footer__wrapper {
-    display: flex;
-    gap: 0 50px;
-}
-
-.footer_inner-title {
-    margin-bottom: 25px;
-}
-
-.footer_inner-list {
-    margin-top: 0;
-    padding: 0;
-}
-
-.footer__company-item:hover {
-    color: #6AAAE5;
-}
-
-.footer_inner-title:hover {
-    color: #6AAAE5;
-}
-
-.footer__company-item {
-    margin-bottom: 20px;
-}
-
-.footer_container {
-    margin-bottom: 0;
-}
-
-.inner__connection-phone {
-    margin-bottom: 10px;
-}
-
-.inner__networks {
-    display: flex;
-    gap: 0 10px;
-}
-
-.hr {
-    margin: 1rem 0;
-    color: inherit;
-}
-
-.footer_rights {
-    display: flex;
-    gap: 0 75px;
-    margin-bottom: 35px;
-}
-
-/* The end index.html */
-/* Payment.html */
-.Payment_wrapper {
-    line-height: 1.5;
-}
-
-.Payment_list-item::before {
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #6cb4f7;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.Payment_list {
-    font-size: 16px;
-}
-
-
-
-/* Guarantees.html */
-.Guarantees_span {
-    font-weight: 600;
-}
-
-.Guarantees_wrapper {
-    line-height: 1.5;
-}
-
-/* Contacts.html */
-.Contacts_inner-item>a {
-    margin-left: 15px;
-    font-size: 20px;
-}
-
-.Contacts_inner-item {
-    display: flex;
-    align-items: center;
-}
-
-.Contacts_inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    height: 200px;
-    border-radius: 30px;
-    gap: 0 25px;
-}
-
-/*Mounting.html */
-.Mounting_subtitle,
-.Mounting_text {
-    font-size: clamp(14px, 1vw, 1.2vw);
-}
-
-.Mounting_inner {
-    line-height: 1.5;
-}
-
-/*Installation_conditioners.html */
-.Installation_title {
-    text-align: center;
-}
-
-.Installation_inner-blok {
-    background-color: #fff;
-    height: auto;
-    border-radius: 30px;
-    padding: 20px 20px;
-    line-height: 1.7;
-    margin-bottom: 35px;
-}
-
-.Installation_inner-title {
-    font-size: 20px;
-    color: #69A8E4;
-    margin: 0;
-}
-
-.Installation_inner-text {
-    font-weight: 600;
-    font-size: 16px;
-    margin: 0;
-}
-
-.Installation_list-link,
-.Installation_item-text {
-    margin: 5px 5px;
-    font-size: 16px;
-}
-
-.Installation_list-item {
-    padding: 0;
-}
-
-.Installation_list-link::before {
-    content: "";
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    background-color: #69A8E4;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.inner_text-item {
-    color: #797979;
-    font-weight: 400;
+    gap: 0 40px;
     font-size: 18px;
 }
 
-.Installation_inner-button {
-    width: 900px;
-    font-size: 20px;
+.phone {
+    font-weight: 700;
+    font-size: 18px;
+    color: #043542;
+}
+
+.top__inner {
     display: flex;
-    text-align: left;
-    border-radius: 30px;
-    padding: 10px 10px;
-    align-items: center;
+    min-height: 610px;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/top-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    margin-bottom: 30px;
+}
+
+.top__inner-item {
+    display: flex;
+    gap: 0 200px;
+    flex-wrap: wrap;
+}
+
+.top__title {
+    font-size: 36px;
+    margin-bottom: 30px;
+
+
+}
+
+.top__text {
+    font-size: 18px;
+    line-height: 1.3;
+    flex-basis: 588px;
+}
+
+.Information {
+    margin-bottom: 100px;
+}
+
+.Information_inner-list {
+    display: flex;
     justify-content: space-between;
+}
+
+.Information_inner-number {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #04806B;
+}
+
+.Information_inner-text {
+    font-size: 26px;
     font-weight: 600;
-    color: #5E9CD9;
-    background-color: #fff;
-    border: 2px solid #69A8E4;
+    color: #04806B;
 }
 
-.Installation_blok-item {
-    height: 100%;
+.Cottage_title,
+.Principles_title,
+.Sales_title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #043E52;
+    margin-bottom: 30px;
 }
 
-/* Installation_list_one */
-.Installation_list {
-    transition-duration: 0.5s;
-    display: none;
+.cart_btn {
+    width: 240px;
+    height: 50px;
+    border: 1px solid #04806B;
 }
 
-.closs_list--menu {
-    transition-duration: 0.5s;
-    display: block;
-    height: 250px;
-    visibility: visible;
+.Cottage_inner {
+    position: relative;
 }
 
-.list_btn,
-img {
-    transition-duration: 0.5s;
+.Cottage_cart {
+    padding: 20px 55px;
 }
 
-.list--img {
-    transition-duration: 0.5s;
-    transform: rotate(-45deg);
+.Arrow {
+    margin-left: 20px;
 }
 
-/* Installation_list_two */
-.Installation_list_two {
-    transition-duration: 0.5s;
-    display: none;
+.Cottage {
+    margin-bottom: 100px;
 }
 
-.closs_list--menu_two {
-    transition-duration: 0.5s;
-    display: block;
-    height: 250px;
-    visibility: visible;
+.Principles {
+    margin-bottom: 100px;
 }
 
-.list_btn_two,
-img {
-    transition-duration: 0.5s;
-}
-
-.list--img_two {
-    transition-duration: 0.5s;
-    transform: rotate(-45deg);
-}
-
-/* Installation_list_three */
-.Installation_list_three {
-    transition-duration: 0.5s;
-    display: none;
-}
-
-.closs_list--menu_three {
-    transition-duration: 0.5s;
-    display: block;
-    height: 120px;
-    visibility: visible;
-}
-
-.list_btn_three,
-img {
-    transition-duration: 0.5s;
-}
-
-.list--img_three {
-    transition-duration: 0.5s;
-    transform: rotate(-45deg);
-}
-
-/* Installation_list_four */
-.Installation_list_four {
-    transition-duration: 0.5s;
-    display: none;
-}
-
-.closs_list--menu_four {
-    transition-duration: 0.5s;
-    display: block;
-    height: 270px;
-    visibility: visible;
-}
-
-.list_btn_four,
-img {
-    transition-duration: 0.5s;
-}
-
-.list--img_four {
-    transition-duration: 0.5s;
-    transform: rotate(-45deg);
-}
-
-/* Installation_list_five */
-.Installation_list_five {
-    transition-duration: 0.5s;
-    display: none;
-}
-
-.closs_list--menu_five {
-    transition-duration: 0.5s;
-    display: block;
-    height: 100px;
-    visibility: visible;
-}
-
-.list_btn_five,
-img {
-    transition-duration: 0.5s;
-}
-
-.list--img_five {
-    transition-duration: 0.5s;
-    transform: rotate(-45deg);
-}
-
-/*Conditioner.html */
-.Conditioner_Product-inner {
+.Principles_text {
     display: flex;
-    gap: 0 50px;
+    max-width: 588px;
+    font-size: 18px;
 }
 
-.Conditioner_Product-card {
-    width: 260px;
-    height: 300px;
-    background-color: #fff;
-    border-radius: 30px;
-    padding: 20px;
+.open-cart {
+    font-size: 18px;
+    position: absolute;
+    color: #ffff;
     cursor: pointer;
+    text-transform: uppercase;
+    bottom: 45px;
+    right: 45px;
+    padding: 20px 50px;
+    background-color: #059B7E;
 }
 
-.Conditioner_Product-card:hover {
-    box-shadow: 0px 5px 10px 2px #6AAAE5;
-    transition: 0.5s;
+
+.Cottage_inner {
+    position: relative;
 }
 
-.Conditioner_img {
-    width: 225px;
-    height: 200px;
+.swiper,
+.mySwiper {
+    padding-bottom: 80px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom, 30px);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 25px);
+}
+
+.Projects,
+.Sales {
+    margin-bottom: 60px;
+}
+
+.Projecits_slider-inner,
+.Sales_slider-inner {
+    padding-top: 30px;
+
+}
+
+.Projecits_slide-img,
+.Sales_slide-img {
+    width: 450px;
+    height: 260px;
+}
+
+.Projects_title,
+.Sales_title {
+    max-width: 1400px;
+    margin: 0 auto;
+    font-size: 36px;
+    font-weight: 700;
+    color: #043E52;
+    margin-bottom: 70px;
+}
+
+.Investors_title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #043E52;
+    margin-bottom: 90px;
+
+}
+
+.Form_title {
+    padding-bottom: 80px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.Team_title {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+
+}
+
+.Contacts_title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 145px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #059B7E;
+    width: 18px;
+    height: 18px;
+}
+
+.swiper-pagination-bullet {
+    background: #036B57;
+    width: 18px;
+    height: 18px;
+}
+
+.mySwiper {
+    overflow: visible;
+}
+
+.mySwiper_Sales {
+    overflow: hidden;
+}
+
+.Projecits_swiper-slide {
+    background-color: #036B57;
+    position: relative;
+    width: 450px !important;
+    height: 560px;
+
+}
+
+.Sales_swiper-slide {
+    background-color: #243746;
+    position: relative;
+    width: 450px !important;
+    height: 560px;
+}
+
+.Projecits_slide-product,
+.Sales_slide-product {
+    display: flex;
+    gap: 0 65px;
+    flex-wrap: wrap;
+    line-height: 1.3;
+    margin: 10px 15px;
+}
+
+
+.Projecits_slide-logo,
+.Sales_slide-logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 275px;
+    left: 325px;
+}
+
+.Projecits_slide-address,
+.Sales_cart-address {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.Projecits_slide-text,
+.Sales_cart-text {
+    color: #fff;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
-.Conditioner_text {
+
+.Projecits_slide-price,
+.Sales_slide-price {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 700;
+
+}
+
+.Projecits_slide-club,
+.Sales_cart-club {
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.Projecits_slide-btn,
+.Sales_slide-btn {
+    font-size: 18px;
+    padding: 20px 120px;
+    background-color: #059B7E;
+    color: #fff;
+    font-weight: 600;
+}
+
+.Sales_container {
+    padding: 0 390px;
+}
+
+.Sales_inner-item {
+    background-color: #036B57;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 65px;
+    width: 420px;
+    height: 600px;
+    padding: 0 20px;
+}
+
+.Sale_swiper-pagination {
+    display: none;
+}
+
+
+.Investors_subtitle {
+    color: #fff;
+    font-size: 36px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+
+
+.Investors_info-btn {
+    position: absolute;
+    font-size: 18px;
+    color: #fff;
+    bottom: 45px;
+    right: 45px;
+    padding: 20px 50px;
+    background-color: #059B7E;
+}
+
+.Investors_wrapper {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    max-width: 1400px;
+    z-index: 1;
+}
+
+.Investors_background {
+    position: relative;
+    background-color: #243746;
+    bottom: 600px;
+    width: 100vw;
+    height: 70vh;
+}
+
+.Team_background {
+    position: relative;
+    background-color: #243746;
+    bottom: 600px;
+    width: 100vw;
+    height: 120vh;
+}
+
+.Form {
+    width: 0;
+    height: 0;
+}
+
+.Form_background {
+    position: relative;
+    background-color: #243746;
+    background-image: url(../images/fons-2.svg);
+    background-repeat: no-repeat;
+    bottom: 600px;
+    width: 100vw;
+    height: 63vh;
+}
+
+.Contacts_background {
+    background-image: url(../images/Contats.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100vw;
+    height: 62vh;
+}
+
+.Investors_wrapper-item {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.Investors_blok-right {
+    background-color: #036B57;
+    width: 680px;
+    height: 340px;
+    margin-right: 20px;
+    padding: 50px;
+}
+
+.Investors_blok-left {
+    background-color: #036B57;
+    width: 680px;
+    height: 340px;
+    margin-left: 20px;
+    padding: 50px;
+
+}
+
+.Investors_blok-title {
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 125px;
+}
+
+.Investors_blok-text {
     font-size: 20px;
+    color: #fff;
+    line-height: 1.3;
+}
+
+.Investors_blok-text>span {
+    font-weight: 600;
+}
+
+.Team_content-blok {
+    display: grid;
+    gap: 40px 40px;
+    grid-template-columns: auto auto;
+}
+
+.Team_blok-item {
+    display: flex;
+    width: 680px;
+    height: 360px;
+    background: #265663;
+}
+
+.Team_item-box {
+    padding: 30px 20px;
+}
+
+.Team_inner-title {
+    font-size: 34px;
+    color: #ffffff;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.Team_inner-text {
+    padding-bottom: 200px;
+    color: #839EA5;
+}
+
+.Team_inner-email {
+    color: #ffffff;
+}
+
+.Form {
+    width: 0vw !important;
+    height: 0vh !important;
+}
+
+
+
+.Form_inner {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 15px;
+}
+
+.Form_inner-name {
+    color: #181818;
+    font-size: 16px;
+    width: 520px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.Form_inner-phone {
+    color: #181818;
+    font-size: 16px;
+    width: 520px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.Form_item-checkbox {
+    color: #EBF3FF;
+    max-width: 520px;
+    margin-bottom: 20px;
+}
+
+.Form_checkbox-text {
+    text-decoration: underline;
+}
+
+.Form_item-btn {
+    display: inline-block;
+    padding: 14px 208px;
+    width: 520px;
+    height: 50px;
+    background-color: #059B7E;
+}
+
+.Form_btn {
+    color: #fff;
+    font-weight: 600;
+}
+
+.Contacts_inner {
+    padding-top: 120px;
+}
+
+.Contacts_inner-info {
+    padding: 25px 30px;
+    width: 520px;
+    height: 370px;
+    background-color: #243746;
+}
+
+.Contacts_info-item {
+    display: grid;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    gap: 20px;
+    line-height: 1.2;
+    grid-template-columns: auto auto;
+}
+
+.footer_wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer_inner-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.footer_list-icone {
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+    height: 125px;
+}
+
+.footer_inner-link {
+    color: #265663;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.Main_text {
+    color: #839EA5;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.footer_site {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
     margin: 0;
+    padding: 100px 10px;
+}
+
+.footer_site>p {
+    color: #265663;
 }
 
 
@@ -788,1131 +671,1578 @@ img {
 
 
 
+@media(max-width:1900px) {
 
-
-@media(max-width:2100px) {
-    .swiper-pagination {
-        display: none;
+    .mySwiper_Sales,
+    .mySwiper {
+        overflow: hidden;
     }
 
-    .search__buttone {
-        display: none;
+    .Contacts_background {
+        height: 58vh;
     }
 
-    .menu__inner-networks {
-        display: none;
-    }
-}
-
-@media(max-width:1200px) {
-    .header_item {
-        gap: 0 35px;
+    .Investors_background {
+        bottom: 599px;
+        height: 70vh;
     }
 
-    .Contacts_inner {
-        width: 1050px;
-        margin-bottom: 80px;
+    .Form_background {
+        bottom: 601px;
+        height: 63vh;
     }
 
-    .header_wrapper {
-        gap: 0 30px;
-    }
-
-    .Conditioner_Product-card {
-        width: 240px;
+    .Form_background {
+        bottom: 601px;
+        height: 63vh;
     }
 }
 
+
+@media(max-width:1600px) {
+
+    .Investors_background {
+        bottom: 590px;
+    }
+
+    .Form_background {
+        height: 69vh;
+        bottom: 602px;
+    }
+
+    .Team_background {
+        bottom: 600px;
+        height: 120vh;
+    }
+
+    .Contacts_background {
+        height: 63vh;
+    }
+}
+
+@media(max-width:1400px) {
+    .Team_blok-item {
+        width: 650px;
+    }
+
+    .Investors_img {
+        width: 1330px;
+    }
+
+    .Projecits_slide-img,
+    .Sales_slide-img {
+        width: 428px;
+    }
+
+
+    .Projecits_swiper-slide,
+    .Sales_swiper-slide {
+        width: 428px !important;
+        height: 560px;
+    }
+
+
+    .Projecits_slide-logo,
+    .Sales_slide-logo {
+        top: 270px;
+        left: 315px;
+    }
+
+
+    .Projecits_slide-price,
+    .Sales_slide-price {
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+}
+
+@media(max-width:1300px) {
+    .Investors_wrapper {
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        max-width: 1200px;
+        z-index: 1;
+    }
+
+    .Projecits_swiper-slide,
+    .Sales_swiper-slide {
+        width: 400px !important;
+        height: 560px;
+    }
+
+    .Projecits_slide-logo,
+    .Sales_slide-logo {
+        top: 270px;
+        left: 285px;
+    }
+
+    .Projecits_slide-btn,
+    .Sales_slide-btn {
+        padding: 20px 110px;
+    }
+
+    .Projecits_slide-img,
+    .Sales_slide-img {
+        width: 400px;
+    }
+
+
+    .Projecits_slide-product::after,
+    .Sales_slide-product::after {
+        left: 280px;
+    }
+
+    .Investors_img {
+        width: 1200px;
+    }
+
+    .Investors_wrapper-item {
+        padding: 0 40px;
+    }
+
+    .Team_blok-item {
+        width: 610px;
+    }
+
+    .Team_item-box {
+        padding: 20px 20px;
+    }
+
+    .Team_inner-title {
+        font-size: 30px;
+        width: 325px;
+    }
+
+    .Team_inner-text {
+        color: #839EA5;
+        padding-bottom: 225px;
+    }
+
+
+
+}
 
 @media(max-width:1024px) {
-    .header_item {
-        gap: 0 20px;
-    }
 
-    .header_buttone-inner {
-        width: 150px;
-        height: 40px;
-        font-size: 14px;
-    }
-
-    .header_wrapper {
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .header_logo-img {
-        width: 150px;
-    }
-
-    .address {
-        display: none;
-    }
-
-    .img_top {
-        width: 975px;
-        margin-left: 0;
-    }
-
-    .catalog_card-img {
-        width: 200px;
-    }
-
-    .Popular_img {
-        width: 165px;
-    }
-
-    .Popular_title {
-        text-align: center;
-        font-size: clamp(14px, 1vw, 1.2vw);
-    }
-
-    .Popular_text {
-        margin: 0;
-        margin-bottom: 20px;
+    .menu__list {
         font-size: 16px;
-    }
-
-    .Partners_img {
-        width: 150px;
-    }
-
-    .Conditioner_Product-inner {
-        gap: 0 30px;
-    }
-
-    .Conditioner_img {
-        width: 180px;
-        height: 190px;
-    }
-
-    .Conditioner_text {
-        font-size: 18px;
-    }
-
-}
-
-@media(max-width:900px) {
-    .header_buttone-inner {
-        width: 150px;
-        height: 40px;
-        font-size: 14px;
-    }
-
-    .header_logo-img {
-        width: 150px;
-    }
-
-    .menu_list {
-        border: 1px solid #69A8E4;
-        width: 200px;
-        position: static;
-
-    }
-
-    .search__buttone {
-        display: flex;
-    }
-
-    .search_screen {
-        display: none;
-    }
-
-    .search_buttone-screen::before {
-        display: none;
-    }
-
-    .search_screen>input:focus {
-        border: 2px solid #6AAAE5;
-    }
-
-    .search_screen>input {
-        position: absolute;
-        width: 350px;
-        top: -18px;
-        left: -80px;
-    }
-
-    .button__menu_item {
-        display: flex;
-        gap: 0 20px;
-        align-items: center;
-    }
-
-    .buttone__search--active {
-        display: flex !important;
-    }
-
-    .address {
-        display: none;
-    }
-
-    .menu_btn {
-        display: flex;
-    }
-
-    .img_top {
-        width: 850px;
-    }
-
-    .header_buttone-inner {
-        display: none;
-    }
-
-    .header_item {
-        display: none;
     }
 
     .phone {
         display: none;
     }
 
-    .menu__list--open {
-        display: block;
-        line-height: 2.5;
-        transition-duration: 1s;
+    .Investors_wrapper {
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        max-width: 1000px;
+        z-index: 1;
     }
 
-
-    .Form__inner-item>input {
-        width: 345px;
-        height: 40px;
-    }
-
-    .footer__wrapper {
-        gap: 0 30px;
-    }
-
-    .menu__inner-networks {
-        display: flex;
-    }
-
-    /*Installation_conditioners--Установка кондиционеров*/
-    .Installation_inner-button {
-        width: 800px;
-    }
-
-    .Contacts_inner {
-        width: 850px;
-    }
-
-    .Conditioner_Product-card {
-        width: 195px;
-        height: 250px;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .Conditioner_img {
-        width: 170px;
-        height: 170px;
-    }
-
-    .Conditioner_text {
-        font-size: 16px;
-    }
-
-    .Conditioner_text {
-        font-size: 18px;
-    }
-
-
-}
-
-
-@media(max-width:768px) {
-    .header_logo-img {
-        width: 150px;
-    }
-
-    .header_wrapper {
-        margin-bottom: 30px;
-    }
-
-    .header_buttone-inner {
-        display: none;
-    }
-
-    .phone {
-        display: none;
-    }
-
-    .address {
-        display: none;
-    }
-
-    .img_top {
-        width: 690px;
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    .swiper-button-right {
-        display: none;
-    }
-
-    .swiper-button-left {
-        display: none;
-    }
-
-    .swiper-pagination {
-        display: flex;
-    }
-
-    .swiper-horizontal>.swiper-pagination-bullets,
-    .swiper-pagination-fraction {
-        top: 236px !important;
-        left: 324px !important;
-        width: 100%;
-    }
-
-    .swiper_button-info {
-        top: 70%;
-        left: 70px;
-        width: 100px;
-        height: 30px;
-        font-size: 14px;
-    }
-
-    .swiper-pagination-bullet {
-        width: 14px !important;
-        height: 14px !important;
-    }
-
-    .top_dignities {
-        display: none;
-    }
-
-
-    .menu__list--open {
-        display: block;
-        line-height: 2.5;
-        transition-duration: 1s;
-    }
-
-    .inner-cataslog {
-        flex-wrap: wrap;
-    }
-
-    .catalog_card {
-        margin-bottom: 20px;
-    }
-
-    .Popular_img {
-        width: 150px;
-    }
-
-    .Form__img {
-        width: 300px;
-    }
-
-    .Form__inner-item>input {
-        font-size: 16px;
-        width: 300px;
-        height: 35px;
-    }
-
-    .footer__wrapper {
-        gap: 0 0;
-    }
-
-    .footer_inner-list {
-        padding-left: 25px;
-    }
-
-    /*Installation_conditioners--Установка кондиционеров*/
-    .Installation_inner-button {
-        width: 690px;
-        height: 60px;
-        font-size: 18px;
-    }
-
-    .Contacts_inner {
-        width: 740px;
-    }
-
-    .Contacts_inner-item>a {
-        margin-left: 10px;
-        font-size: 18px;
-    }
-
-    .Conditioner_Product-card {
-        width: 195px;
-        height: 220px;
-        padding: 10px;
-        gap: 0 30px;
-        text-align: center;
-    }
-
-    .Conditioner_img {
-        width: 140px;
-        height: 140px;
-    }
-
-
-
-
-}
-
-@media(max-width:480px) {
-    body {
-        font-size: 12px;
-    }
-
-    .container {
-        margin-bottom: 30px;
-    }
-
-    .header_logo-img {
-        width: 135px;
-    }
-
-    .menu_btn {
-        width: 25px;
-    }
-
-
-
-    .search_screen>input {
-        width: 215px;
-        top: -18px;
-        height: 35px;
-        left: -68px;
-        font-size: 14px;
-    }
-
-    .img_top {
-        width: 409px;
-    }
-
-    .swiper-horizontal>.swiper-pagination-bullets,
-    .swiper-pagination-fraction {
-        top: 135px !important;
-        left: 200px !important;
-    }
-
-    .swiper_button-info {
-        left: 12%;
-        width: 50px;
-        height: 18px;
-        font-size: 8px;
-        top: 115px;
-    }
-
-    .swiper_button-info {
-        border: 1px solid white;
-    }
-
-    .swiper-pagination-bullet {
-        width: 8px !important;
-        height: 8px !important;
-    }
-
-    .input>input {
-        width: 100px;
-    }
-
-    .catalog_card {
-        width: 200px;
-    }
-
-    .catalog_card-img {
-        width: 185px;
-    }
-
-    .Partners_img {
-        width: 135px;
-    }
-
-    .Form__img {
-        width: 250px;
-    }
-
-    .Form__title {
-        margin-bottom: 10px;
-    }
-
-    .Form__text {
-        font-size: 12px;
-    }
-
-    .Form__inner-item>input {
-        font-size: 12px;
-        height: 30px;
-    }
-
-    .Form__checkbox {
-        margin-top: 0;
-    }
-
-    .Form__button>button {
-        width: 120px;
-        height: 40px;
-        font-size: 14px;
-    }
-
-    .Form_wrapper {
-        flex-wrap: wrap;
-        height: 480px;
-    }
-
-    .footer__wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer__inner-list {
-        display: none;
-    }
-
-    .footer_inner-connection {
-        margin-left: 26px;
-    }
-
-    /*Installation_conditioners--Установка кондиционеров*/
-    .Installation_inner-button {
-        width: 400px;
-        line-height: 1.4;
-    }
-
-    .closs_list--menu {
-        height: 370px;
-    }
-
-    .closs_list--menu_two {
-        height: 370px;
-    }
-
-    .closs_list--menu_three {
-        height: 200px;
-    }
-
-    .closs_list--menu_four {
-        height: 450px;
-    }
-
-    #list_img,
-    #list_img_two,
-    #list_img_three,
-    #list_img_four,
-    #list_img_five {
-        width: 35px;
-        height: 35px;
-    }
-
-    /* Payment--Оплата и доставка */
-
-    .Payment_list {
-        font-size: 14px;
-        margin-bottom: 50px;
-        margin-left: 10px;
-        padding: 0;
-    }
-
-    .Payment_text {
-        font-size: 16px;
-    }
-
-    .Payment_list>li {
-        margin-bottom: 5px;
-    }
-
-    .Contacts_inner {
-        display: block;
-        text-align: center;
-    }
-
-    .Contacts_inner-item {
-        margin: 20px 0 25px;
-    }
-
-    .Contacts_inner {
-        width: 450px;
-        height: 210px;
-        padding: 1px 31px;
-    }
-
-    .Conditioner_Product-card {
-        width: 195px;
-        height: 220px;
-        margin-bottom: 20px;
-    }
-
-    .Conditioner_img {
-        width: 140px;
-        height: 140px;
-    }
-
-    .Conditioner_Product-inner {
-        gap: 0 50px;
-        flex-wrap: wrap;
-    }
-
-}
-
-@media(max-width:460px) {
-    .header_wrapper {
-        margin: 0;
+    .Investors_img {
+        width: 990px;
     }
 
-    .header_logo-img {
-        width: 125px;
-    }
-
-    .img_top {
-        width: 390px;
-    }
-
-    .img_top {
-        width: 390px;
-    }
-
-    .swiper_button-info {
-        left: 45px;
-        top: 110px;
-    }
-
-    .search_screen>input {
-        width: 180px;
-        height: 30px;
-        top: -15px;
-        left: -50px;
-    }
-
-    .swiper-horizontal>.swiper-pagination-bullets,
-    .swiper-pagination-fraction {
-        top: auto !important;
-        left: 170px !important;
-    }
+    .Investors_wrapper-item {
 
-    .catalog_card-img {
-        width: 160px;
-    }
-
-    .catalog_card {
-        width: 165px;
-    }
-
-    .footer_rights {
-        font-size: 10px;
-    }
-
-    /*Installation_conditioners--Установка кондиционеров*/
-
-    .Installation_list-link {
-        font-size: 14px;
-    }
-
-    .Installation_inner-text {
-        font-size: 14px;
-    }
-
-    .Installation_inner-button {
-        width: 350px;
-        height: 60px;
-        font-size: 16px;
-    }
 
-    .closs_list--menu_two {
-        height: 400px;
+        padding: 0 10px;
     }
 
-    .closs_list--menu_three {
+    .Investors_blok-left {
+        width: 600px;
         height: 300px;
+        padding: 40px;
     }
 
-    .closs_list--menu_four {
-        height: 600px;
-    }
-
-    .closs_list--menu_five {
-        height: 200px;
-    }
-
-    /* Payment--Оплата и доставка */
-    .Payment_list {
-        margin-left: 20px;
-    }
-
-    .Payment_text {
-        font-size: 14px;
-    }
-
-    .Contacts_inner {
-        width: 400px;
-    }
-
-    .Conditioner_img {
-        height: 130px;
-    }
-
-    .Conditioner_Product-inner {
-        gap: 0 30px;
-    }
-
-
-}
-
-@media (max-width: 440px) {
-    .img_top {
-        width: 370px;
-    }
-
-    .Conditioner_img {
-        height: 130px;
-    }
-
-    .Conditioner_Product-card {
-        width: 180px;
-        height: 200px;
-    }
-}
-
-
-@media(max-width:420px) {
-    .header_wrapper {
-        margin: 0;
-    }
-
-    .header_logo-img {
-        width: 125;
-    }
-
-    .img_top {
-        width: 340px;
-    }
-
-    .search_screen>input {
-        width: 180px;
-        height: 30px;
-        top: -15px;
-        left: -50px;
-    }
-
-    .swiper-horizontal>.swiper-pagination-bullets,
-    .swiper-pagination-fraction {
-        top: auto !important;
-        left: 170px !important;
-    }
-
-    .catalog_card-img {
-        width: 160px;
-    }
-
-    .catalog_card {
-        width: 165px;
-    }
-
-    .footer_rights {
-        font-size: 10px;
-    }
-
-    /*Installation_conditioners--Установка кондиционеров*/
-
-    .Installation_list-link {
-        font-size: 14px;
-    }
-
-    .Installation_inner-text {
-        font-size: 14px;
-    }
-
-    .Installation_inner-button {
-        width: 350px;
-        height: 60px;
-        font-size: 16px;
-    }
-
-    .closs_list--menu_two {
-        height: 400px;
-    }
-
-    .closs_list--menu_three {
+    .Investors_blok-right {
+        width: 600px;
         height: 300px;
+        padding: 40px;
     }
 
-    .closs_list--menu_four {
-        height: 600px;
+    .Projecits_swiper-slide,
+    .Sales_swiper-slide {
+        width: 320px !important;
+        height: 550px;
     }
 
-    .closs_list--menu_five {
-        height: 200px;
+    .Projecits_slide-btn,
+    .Sales_slide-btn {
+        padding: 20px 74px;
     }
 
-    /* Payment--Оплата и доставка */
-    .Payment_list {
-        margin-left: 20px;
+    .Projecits_slide-img,
+    .Sales_slide-img {
+        width: 320px;
     }
 
-    .Payment_text {
-        font-size: 14px;
-    }
-
-    .Contacts_inner {
-        width: 400px;
-    }
-
-    .Conditioner_Product-card {
-        width: 170px;
-        height: 200px;
-    }
-
-
-
-}
-
-@media(max-width:420px) {
-    .header_logo-img {
-        width: 125px;
-    }
-
-    .img_top {
-        width: 350px;
-        height: 135px;
-    }
-
-    .search_screen>input {
-        width: 200px;
-        height: 35px;
-        top: 16px;
-        left: -78px;
-    }
-
-    .swiper-horizontal>.swiper-pagination-bullets,
-    .swiper-pagination-fraction {
-        top: auto !important;
-        left: 160px !important;
-    }
-
-    .catalog_card {
-        width: 170px;
-    }
-
-    .catalog_card-img {
-        width: 135px;
-    }
-
-    .swiper_button-info {
-        left: 42px;
-        width: 50px;
-        height: 16px;
-        font-size: 8px;
-        top: 90px;
-    }
-
-    .Popular_img {
-        width: 135px;
-    }
-
-    .Partners_img {
-        width: 130px;
-    }
-
-    .Guarantees_span {
+    .Projecits_slide-address,
+    .Sales_cart-address,
+    .Projecits_slide-club,
+    .Sales_cart-club,
+    .Projecits_slide-text,
+    .Sales_cart-text,
+    .Projecits_slide-price,
+    .Sales_slide-price,
+    .Projecits_slide-btn,
+    .Sales_slide-btn {
         font-size: 16px;
     }
 
-    .inner__connection-phone {
-        display: flex;
-        font-size: 14px;
-        margin-left: 10px;
-    }
-
-    /*Installation_conditioners--Установка кондиционеров*/
-    .Contacts_inner {
-        width: 350px;
-        width: 350px;
-        height: 210px;
-        padding: 1px 31px;
-    }
-
-}
-
-
-@media(max-width:400px) {
-    .img_top {
-        width: 330px;
-        height: 135px;
-    }
-
-    .swiper_button-info {
-        left: 40px;
-        top: 105px;
-    }
-
-    .catalog_card {
-        width: 150px;
-    }
-
-    .swiper-horizontal>.swiper-pagination-bullets,
-    .swiper-pagination-fraction {
-        left: 155px !important;
-    }
-
-    .Installation_inner-button {
-        width: 325px;
-        height: 50px;
-        font-size: 14px;
-    }
-
-    .Conditioner_Product-card {
-        width: 165px;
-    }
-
-}
-
-@media(max-width:380px) {
-    .header_logo-img {
-        width: 100px;
-    }
-
-    .container {
-        margin-bottom: 0;
-    }
-
-    .search__buttone>img {
-        width: 25px;
-    }
-
-    .img_top {
-        width: 320px;
-        height: auto;
-    }
-
-    .swiper-horizontal>.swiper-pagination-bullets,
-    .swiper-pagination-fraction {
-        top: auto !important;
-        left: 145px !important;
-    }
-
-    .swiper-pagination-bullet {
-        width: 5px !important;
-        height: 5px !important;
+    .Projecits_slide-logo,
+    .Sales_slide-logo {
+        width: 80px;
+        height: 80px;
+        top: 270px;
+        left: 228px;
     }
 
 
-    .Form__checkbox {
-        font-size: 10px;
-    }
-
-    .search_screen>input {
-        width: 140px;
-        height: 25px;
-        top: -14px;
-        left: -42px;
-    }
-
-    .catalog_card {
-        width: 150px;
-    }
-
-    .footer__wrapper {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .inner__connection-phone {
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        margin-left: 0;
-    }
-
-    .footer_rights {
-        display: flex;
-        gap: 0 50px;
-    }
-
-    /*Installation_conditioners--Установка кондиционеров*/
-
-    .Installation_inner-blok {
-        padding: 10px 10px;
-    }
-
-    .Installation_inner-button {
-        width: 320px;
-        height: 50px;
-    }
-
-    .Installation_list,
-    .Installation_list_two,
-    .Installation_list_three,
-    .Installation_list_four,
-    .Installation_list_five {
-        padding: 0;
-    }
-
-    .closs_list--menu,
-    .closs_list--menu_two {
+    .Team_blok-item {
+        width: 460px;
         height: 320px;
     }
 
-    .closs_list--menu_three {
-        height: 200px;
+    .Team_item-box {
+        width: 250px;
+        padding: 20px 20px;
     }
 
-    .closs_list--menu_four {
-        height: 400px;
+    .Team_inner-title {
+        width: 200px;
+        height: 70px;
     }
 
-    .closs_list--menu_five {
-        height: 150px;
+    .Team_inner-text {
+        width: 200px;
+        font-size: 14px;
+        height: 170px;
+        padding-bottom: 155px;
+    }
+}
+
+.Team-text {
+    padding: 20px 20px 185px 20px;
+}
+
+.Team_content-blok {
+    max-width: 1000px;
+}
+
+.Form_inner {
+    margin: 0 auto;
+}
+
+.Contacts_inner {
+    padding: 110px 15px;
+}
+
+.footer_site {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0;
+    padding: 100px 10px;
+}
+
+.footer_list-icone {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+}
+
+
+
+@media(max-width:900px) {
+    .Arrow {
+        display: none;
     }
 
-    .Installation_list-link,
-    .Installation_item-text {
+    .menu_list-active {
+        box-shadow: 0px 10px 3px -5px rgba(0, 0, 0, 0.5);
+    }
+
+    .menu_btn {
+        display: flex;
+    }
+
+    .menu__list--open {
+        display: block;
+        line-height: 2.5;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    .menu__list,
+    .phone {
+        display: none;
+    }
+
+    .Projecits_slide-address,
+    .Sales_cart-address,
+    .Projecits_slide-club,
+    .Sales_cart-club,
+    .Projecits_slide-text,
+    .Sales_cart-text,
+    .Projecits_slide-price,
+    .Sales_slide-price,
+    .Projecits_slide-btn,
+    .Sales_slide-btn {
         font-size: 14px;
     }
 
-    .Conditioner_Product-card {
-        width: 155px;
+    .swiper-pagination-bullet {
+        background: #036B57;
+        width: 15px;
+        height: 15px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 15px);
+    }
+
+    .Projecits_slide-img,
+    .Sales_slide-img {
+        width: 276px;
+        height: 190px;
+    }
+
+    .Projecits_swiper-slide,
+    .Sales_swiper-slide {
+        width: 276px !important;
+        height: 460px;
+    }
+
+    .Projecits_slide-logo,
+    .Sales_slide-logo {
+        width: 75px;
+        height: 75px;
+        top: 200px;
+        left: 190px;
+    }
+
+
+    .Projecits_slide-btn,
+    .Sales_slide-btn {
+        padding: 20px 55px;
+    }
+
+
+    .Investors_wrapper {
+        max-width: 890px;
+    }
+
+    .Investors_img {
+        width: 870px;
+        padding: 0 10px;
+    }
+
+    .Investors_info-btn {
+        padding: 15px 40px;
+        font-size: 16px;
+        bottom: 15px;
+        right: 75px;
+        font-weight: 600;
+    }
+
+    .Information_inner-list {
+        display: flex;
+        justify-content: normal;
+        gap: 0 75px;
+        flex-wrap: wrap;
+    }
+
+    .Information_inner-number {
+        font-size: 45px;
+    }
+
+    .Investors_blok-right,
+    .Investors_blok-left {
+        width: 500px;
+        height: 300px;
+        padding: 30px;
+        margin: 0 10px;
+    }
+
+
+
+    .Team_blok-item {
+        width: 413px;
+        height: 259px;
+    }
+
+    .Team_item-box {
+        width: 220px;
+    }
+
+    .Team_inner-title {
+        font-size: 26px;
+    }
+
+    .Team_inner-text {
+        height: 140px;
+        padding-bottom: 135px;
+    }
+
+    .Form_inner {
+        margin: 0;
+        max-width: 900px;
+        padding: 0 10px;
+    }
+
+    .Contacts_inner {
+        padding: 90px 15px;
+    }
+
+    .footer_inner-item {
+        justify-content: center;
+    }
+
+    .footer_inner-list {
+        display: none;
+    }
+
+    .footer_list-icone {
+        display: flex;
+    }
+
+    .footer_site {
+        justify-content: center;
+        gap: 0 320px;
+        max-width: 900px;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+
+    .footer_site-img {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:800px) {
+    .Information_inner-number {
+        font-size: 36px;
+    }
+
+    .Cottage_title,
+    .Principles_title,
+    .Sales_title {
+        font-size: 32px;
+    }
+
+    .Investors_blok-right,
+    .Investors_blok-left {
+        width: 355px;
+    }
+
+    .Team_item-box {
+        width: 180px;
+        padding: 15px 7px;
+    }
+
+    .Team_inner-title {
+        width: 160px;
+        height: 68px;
+    }
+
+    .Team_inner-text {
+        width: 145px;
+    }
+
+    .Information_inner-list {
+        gap: 0 43px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
+    }
+
+    .swiper-pagination-bullet {
+        background: #036B57;
+        width: 15px;
+        height: 15px;
+    }
+
+    .Projecits_slide-img,
+    .Sales_slide-img {
+        width: 240px;
+    }
+
+
+    .Projecits_swiper-slide,
+    .Sales_swiper-slide {
+        width: 240px !important;
+    }
+
+    .Projecits_slide-logo,
+    .Sales_slide-logo {
+        width: 70px;
+        height: 70px;
+        top: 7px;
+        left: 10px;
+    }
+
+    .Projecits_slide-btn,
+    .Sales_slide-btn {
+        font-size: 18px;
+        padding: 10px 30px;
+    }
+
+    .Investors_img {
+        width: 770px;
+    }
+
+
+    .Investors_blok-right,
+    .Investors_blok-left {
+        padding: 20px;
+    }
+
+    .Team_background {
+        height: 100vh;
+    }
+
+    .Team_blok-item {
+        width: 365px;
+        height: 250px;
+    }
+
+    .Team_item-box {
+        padding: 15px 15px;
+    }
+
+    .Team_content-blok {
+        display: grid;
+        gap: 30px 40px;
+    }
+
+    .Contacts_inner {
+        padding: 110px 18px;
+    }
+
+    .Form_background {
+        height: 69vh;
+        bottom: 600px;
+    }
+
+    .footer_list-icone {
+        gap: 0 40px;
+    }
+}
+
+@media(max-width:768px) {
+    .open-cart {
+        font-size: 18px;
+        position: absolute;
+        color: #ffff;
+        cursor: pointer;
+        text-transform: uppercase;
+        bottom: 45px;
+        right: 15px;
+        padding: 20px 45px;
+        background-color: #059B7E;
+    }
+
+    .Investors_img {
+        width: 735px;
+    }
+
+    .Projecits_slide-img,
+    .Sales_slide-img {
+        width: 230px;
+    }
+
+    .Projecits_swiper-slide,
+    .Sales_swiper-slide {
+        width: 230px !important;
+    }
+
+    .Projecits_slide-btn,
+    .Sales_slide-btn {
+        font-size: 18px;
+        padding: 10px 28px;
+    }
+
+    .Investors_blok-right,
+    .Investors_blok-left {
+        width: 338px;
+    }
+
+    .Team_inner-title {
+        width: 156px;
+        height: 70px;
+    }
+
+    .Investors_blok-right,
+    .Investors_blok-left {
+        padding: 12px;
+    }
+
+
+    .Team_item-box {
+        width: 175px;
+        padding: 10px 10px;
+    }
+
+    .Team_content-blok {
+        display: grid;
+        gap: 25px 25px;
+    }
+
+    .Team_inner-text {
+        width: 160px;
+    }
+
+    .Team_blok-item {
+        width: 355px;
+        height: 240px;
+    }
+
+    .Team_inner-title {
+        font-size: 24px;
+    }
+
+    .Team_inner-text {
+        height: 100px;
+        padding-bottom: 120px;
+    }
+
+    .Contacts_inner {
+        padding: 90px 18px;
+    }
+}
+
+@media(max-width:480px) {
+    .Arrow {
+        display: none;
+    }
+
+    .Projects_title,
+    .Sales_title,
+    .Investors_title {
+        margin-bottom: 30px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 20px);
+    }
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+
+    .Information_inner-list {
+        gap: 20px 100px;
+    }
+
+    .Information_inner-number {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .Information_inner-text {
+        font-size: 20px;
+    }
+
+    .Information_inner-list {
+        padding: 0 20px;
+    }
+
+    .Information_number-eleven {
+        width: 175px;
+    }
+
+    .Information_number_three {
+        width: 131px;
+    }
+
+    .open-cart {
+        font-size: 16px;
+        bottom: 20px;
+        right: 40px;
+        padding: 15px 117px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 15px);
+    }
+
+    .Projecits_slide-btn,
+    .Sales_slide-btn {
+        font-size: 16px;
+        padding: 10px 35px;
+    }
+
+    .Projecits_slide-img,
+    .Sales_slide-img {
+        width: 220px;
+        height: 195px;
+    }
+
+    .Projecits_swiper-slide,
+    .Sales_swiper-slide {
+        width: 220px !important;
+        height: 450px;
+    }
+
+    .Projecits_slide-product,
+    .Sales_slide-product {
+        line-height: 1.2;
+        margin: 10px 10px;
+    }
+
+    .Investors_container,
+    .Contacts_container {
+        padding: 0;
+    }
+
+    .Investors_background {
+        height: 24vh;
+    }
+
+    .Investors_title {
+        padding: 0 15px;
+    }
+
+    .Investors_background {
+        top: -150px;
+    }
+
+    .Investors_background-two {
+        top: -288px;
+        height: 40vh;
+    }
+
+    .Investors_img {
+        width: 100%;
+        height: 650px;
+        padding: 0;
+    }
+
+    .Investors_subtitle {
+        font-size: 28px;
+        line-height: 1.5;
+        height: 136px;
+        width: 300px;
+        top: 20px;
+        left: 25px
+    }
+
+    .Investors_blok-right,
+    .Investors_blok-left {
+        padding: 16px;
+    }
+
+    .Investors_info-btn {
+        padding: 15px 170px;
+        font-weight: 600;
+        right: 21px;
+    }
+
+    .Investors_wrapper-item {
+        padding: 0;
+        flex-wrap: wrap;
+        gap: 20px;
+        position: relative;
+        position: relative;
+        bottom: 480px;
+    }
+
+    .Investors_blok-left,
+    .Investors_blok-right {
+        width: 440px;
+        height: 160px;
+        line-height: 1.5;
+    }
+
+    .Investors_blok-title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .Investors_blok-text {
+        font-size: 18px;
+    }
+
+    .Team_background {
+        height: 160vh;
+    }
+
+    .Team_content-blok {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Team_blok-item {
+        width: 450px;
+        height: 200px;
+    }
+
+    .Team_background {
+        height: 122vh;
+    }
+
+    .Team_item-box {
+        width: 300px;
+        padding: 15px 10px;
+    }
+
+    .Team_inner-title {
+        width: 230px;
+        height: 35px;
+    }
+
+    .Contacts_inner-info {
+        padding: 25px 30px;
+        width: 100%;
+        height: 370px;
+    }
+
+    .Contacts_background {
+        height: 42vh;
+    }
+
+    .Contacts_inner {
+        padding: 0;
+    }
+
+    .Form_title {
+        padding-bottom: 30px;
+    }
+
+    .Form_inner {
+        position: relative;
+        bottom: -190px;
+    }
+
+    .Form_inner-name {
+        font-size: 16px;
+        width: 435px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .Form_inner-phone {
+        font-size: 16px;
+        width: 435px;
+        height: 40px;
+    }
+
+    .Form_item-btn {
+        padding: 14px 190px;
+        width: 435px;
+        height: 50px;
+    }
+
+
+}
+
+@media(max-width:440px) {
+    .Team_item-box {
+        width: 265px;
+        padding: 15px 10px;
+    }
+
+    .Information_inner-list {
+        gap: 30px 63px;
+    }
+
+    .open-cart {
+        padding: 15px 100px;
+    }
+
+    .Cottage_title,
+    .Principles_title,
+    .Projects_title,
+    .Sales_title,
+    .Team_title,
+    .Form_title,
+    .Investors_title {
+        font-size: 24px;
+    }
+
+    .Projecits_swiper-slide,
+    .Sales_swiper-slide {
+        width: 200px !important;
+        height: 450px;
+    }
+
+    .Projecits_slide-product,
+    .Sales_slide-product {
+        line-height: 1.2;
+    }
+
+    .Projecits_slide-btn,
+    .Sales_slide-btn {
+        font-size: 16px;
+        padding: 10px 24px;
+    }
+
+    .Sales_slide-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .Projecits_slide-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .Investors_info-btn {
+        padding: 15px 161px;
+        right: 10px;
+    }
+
+    .Contacts_title {
+        font-size: 24px;
+
+        margin-bottom: 50px;
+    }
+
+    .Contacts_inner-info {
+        padding: 25px 20px;
+        height: 281px;
+    }
+
+    .Contacts_background {
+        height: 32vh;
+    }
+
+    .Form_inner-name,
+    .Form_inner-phone,
+    .Form_item-btn {
+        width: 390px;
+    }
+
+    .Form_item-checkbox {
+        font-size: 11px;
+    }
+
+    .Form_item-btn {
+        padding: 14px 150px;
+    }
+
+    .footer_site {
+        padding-bottom: 50px;
+    }
+
+    .footer_inner-item {
+        margin-bottom: 80px;
+    }
+}
+
+@media(max-width:420px) {
+    .logo>img {
+        width: 133px;
+    }
+
+
+    .menu_btn_item_one,
+    .menu_btn_item_two,
+    .menu_btn_item_three {
+        height: 12px;
+    }
+
+    .top__title {
+        font-size: 36px;
+        margin-bottom: 275px;
+    }
+
+    .Information_inner-list {
+        gap: 20px 33px;
+    }
+
+    .open-cart {
+        font-size: 16px;
+        bottom: 30px;
+        right: 20px;
+        padding: 15px 100px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
+    }
+
+
+    .Form_inner-name,
+    .Form_inner-phone,
+    .Form_item-btn {
+        width: 380px;
+    }
+
+    .Form_item-btn {
+        padding: 14px 150px;
+    }
+
+    .Team_item-box {
+        width: 250px;
+        padding: 15px 10px;
+    }
+
+    .Investors_wrapper {
+        margin-bottom: 0;
+    }
+
+    .Investors_background-two {
+        top: -287px;
+        height: 42vh;
+    }
+
+    .Investors_subtitle {
+        font-size: 26px;
+        padding: 0;
+
+    }
+
+    .Investors_info-btn {
+        right: 30px;
+    }
+
+    .Contacts_info-item {
+        font-size: 16px;
+    }
+
+    .Contacts_inner-info {
+        padding: 25px 20px;
+        height: 300px;
+    }
+
+    .Team_background {
+        height: 120vh;
+    }
+
+    .Team_item-box {
+        width: 250px;
+        padding: 15px 10px;
+    }
+
+    .Form_background {
+        height: 70vh;
+        bottom: 605px;
+    }
+
+
+
+}
+
+@media(max-width:414px) {
+
+    .menu_btn_item_one,
+    .menu_btn_item_two,
+    .menu_btn_item_three {
+        height: 12px;
+    }
+
+    .top__title {
+        font-size: 36px;
+        margin-bottom: 275px;
+    }
+
+    .Information_inner-list {
+        gap: 20px 33px;
+        padding: 0 15px;
+    }
+
+    .Projecits_swiper-slide,
+    .Sales_swiper-slide {
+        width: 184px !important;
+        height: 450px;
+    }
+
+    .Projecits_slide-img,
+    .Sales_slide-img {
+        width: 184px;
+        height: 190px;
+    }
+
+    .Projecits_slide-btn,
+    .Sales_slide-btn {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 18px;
+    }
+
+
+    .open-cart {
+        font-size: 16px;
+        bottom: 30px;
+        right: 20px;
+        padding: 15px 100px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
+    }
+
+
+    .Form_inner-name,
+    .Form_inner-phone,
+    .Form_item-btn {
+        width: 370px;
+    }
+
+    .Form_item-btn {
+        padding: 15px 139px;
+    }
+
+    .Team_blok-item {
+        width: 380px;
+        height: 200px;
+    }
+
+    .Team_inner-title {
+        width: 150px;
+        height: 65px;
+    }
+
+    .Team_inner-text {
+        height: 50%;
+        padding-bottom: 57px;
+    }
+
+    .Investors_wrapper {
+        margin-bottom: 0;
+    }
+
+    .Investors_background-two {
+        top: -287px;
+        height: 42vh;
+    }
+
+    .Investors_subtitle {
+        font-size: 26px;
+        padding: 0;
+
+    }
+
+    .Investors_info-btn {
+        right: 8px;
+        padding: 15px 145px;
+    }
+
+    .Contacts_info-item {
+        font-size: 16px;
+    }
+
+    .Contacts_inner-info {
+        padding: 25px 20px;
+        height: 300px;
+    }
+
+    .Team_background {
+        height: 120vh;
+    }
+
+    .Team_item-box {
+        width: 230px;
+        padding: 15px 10px;
+    }
+
+    .Form_background {
+        height: 69vh;
+        bottom: 605px;
+    }
+
+    .footer_list-icone {
+        gap: 0 30px;
+    }
+
+
+
+}
+
+@media(max-width:390px) {
+    .Information_inner-list {
+        gap: 15px 20px;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 150px 150px;
+        justify-content: center;
+    }
+
+    .open-cart {
+        right: 12px;
+    }
+
+    .Projecits_swiper-slide,
+    .Sales_swiper-slide {
+        width: 175px !important;
+        height: 400px;
+    }
+
+    .Projecits_slide-img,
+    .Sales_slide-img {
+        width: 175px;
+        height: 170px;
+    }
+
+    .Projecits_slide-logo,
+    .Sales_slide-logo {
+        width: 65px;
+        height: 65px;
+        top: 5px;
+        left: 7px;
+    }
+
+    .Projecits_slide-product,
+    .Sales_slide-product {
+        line-height: 1;
+    }
+
+    .Projecits_slide-btn,
+    .Sales_slide-btn {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 14px;
+    }
+
+    .Investors_blok-left,
+    .Investors_blok-right {
+        width: 365px;
+    }
+
+    .Investors_info-btn {
+        right: 15px;
+    }
+
+    .Team_item-box {
+        width: 210px;
+    }
+
+    .Form_inner-name,
+    .Form_inner-phone,
+    .Form_item-btn {
+        width: 345px;
+    }
+
+    .Form_item-btn {
+        padding: 14px 135px;
+    }
+
+    .Contacts_inner-info {
+        padding: 25px 20px;
+        height: 310px;
+        position: relative;
+        top: -30px;
     }
 }
 
 @media(max-width:380px) {
-    .header_logo-img {
-        width: 120px;
+    .top__title {
+        margin-bottom: 275px;
     }
 
-    .img_top {
-        width: 310px;
+    .Investors_img {
+        width: 100%;
+        height: 600px;
+        padding: 0;
     }
 
-    .swiper_button-info {
-        left: 38px;
-        width: 45px;
-        height: 14px;
-        top: 77px;
-        font-size: 7px;
-    }
-}
-
-@media(max-width:320px) {
-    body {
-        font-size: 14px;
-    }
-
-    .header_logo-img {
-        width: 100px;
-    }
-
-    .container {
-        margin-bottom: 0;
-    }
-
-    .search__buttone>img {
-        width: 25px;
-    }
-
-    .img_top {
-        width: 265px;
-    }
-
-    .swiper_button-info {
-        left: 35px;
-        width: 35px;
-        height: 12px;
-        top: 65px;
-        font-size: 6px;
-    }
-
-    .swiper-horizontal>.swiper-pagination-bullets,
-    .swiper-pagination-fraction {
-        top: auto !important;
-        left: 130px !important;
-    }
-
-    .swiper-pagination-bullet {
-        width: 5px !important;
-        height: 5px !important;
-    }
-
-    .Form__checkbox {
-        font-size: 10px;
-    }
-
-    .search_screen>input {
-        width: 140px;
-        height: 25px;
-        top: 25px;
-        left: -48px;
-        z-index: 5;
-    }
-
-    .catalog_card {
-        width: 120px;
-    }
-
-    .catalog_card-img {
-        width: 110px;
-    }
-
-    .Form__inner-item>input {
-        font-size: 10px;
-        width: 250px;
-    }
-
-    .Form__button>button {
-        width: 110px;
-        height: 35px;
-    }
-
-    .footer_inner-connection {
-        display: flex;
-        align-items: center;
-        gap: 0 20px;
-    }
-
-    .inner__connection-phone {
-        justify-content: left;
-    }
-
-    .footer_rights {
-        font-size: 8px;
-    }
-
-    /*Installation_conditioners--Установка кондиционеров*/
-
-    .Installation_inner-button {
-        width: 260px;
-        height: 65px;
-        font-size: 14px;
-    }
-
-    .Installation_list-link,
-    .Installation_item-text {
-        font-size: 12px;
-    }
-
-    .closs_list--menu,
-    .closs_list--menu_two {
-        height: 300px;
-    }
-
-    .closs_list--menu_three {
-        height: 200px;
-    }
-
-    .closs_list--menu_four {
-        height: 400px;
-    }
-
-    .Contacts_inner {
+    .Investors_blok-left,
+    .Investors_blok-right {
         width: 290px;
     }
 
-    .Contacts_inner-item>a {
-        margin-left: 10px;
+    .Investors_info-btn {
+        padding: 15px 95px;
+        right: 17px;
+    }
+
+    .Team_inner-title {
+        width: 144px;
+        font-size: 20px;
+        height: 50px;
+    }
+
+    .Team_inner-text {
+        width: 100%;
+    }
+
+    .Team_inner-email {
+        color: #ffffff;
+        font-size: 14px;
+    }
+
+    .Form_item-btn {
+        padding: 17px 93px;
+    }
+
+    .Information_inner-list {
+        gap: 20px 0px;
+    }
+
+    .open-cart {
+        padding: 15px 95px;
+    }
+
+    .Investors_info-btn {
+        padding: 15px 124px;
+        right: 15px;
+    }
+
+    .Projecits_swiper-slide,
+    .Sales_swiper-slide {
+        width: 170px !important;
+        height: 415px;
+    }
+
+    .Projecits_slide-product,
+    .Sales_slide-product {
+        line-height: 1;
+    }
+
+    .Projecits_slide-img,
+    .Sales_slide-img {
+        width: 170px;
+        height: 185px;
+    }
+
+    .Projecits_slide-btn,
+    .Sales_slide-btn {
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+    .Projecits_slide-logo,
+    .Sales_slide-logo {
+        width: 60px;
+        height: 60px;
+        top: 7px;
+        left: 5px;
+    }
+
+    .Investors_wrapper-item {
+        bottom: 455px;
+    }
+
+    .Investors_blok-left,
+    .Investors_blok-right {
+        line-height: 1;
+    }
+
+    .Form_inner-name,
+    .Form_inner-phone,
+    .Form_item-btn {
+        width: 335px;
+    }
+
+    .Form_item-btn {
+        padding: 14px 130px;
+    }
+
+    .Team_item-box {
+        width: 200px;
+    }
+
+    .Contacts_inner-info {
+        padding: 50px 20px;
+    }
+
+    .Contacts_inner-info {
+        height: 310px;
+    }
+
+}
+
+@media(max-width:360px) {
+    .top__title {
+        margin-bottom: 220px;
+        font-size: 32px;
+    }
+
+    .Information_inner-list {
+        gap: 20px 0px;
+        display: grid;
+        grid-template-columns: 205px 125px;
+        padding: 0;
+    }
+
+    .open-cart {
+        padding: 15px 70px;
+        right: 22px;
+    }
+
+    .Investors_info-btn {
+        padding: 15px 115px;
+        right: 17px;
+    }
+
+    .Projecits_slide-img,
+    .Sales_slide-img {
+        width: 150px;
+        height: 130px;
+    }
+
+    .Projecits_slide-logo,
+    .Sales_slide-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .Projecits_slide-btn,
+    .Sales_slide-btn {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .Projecits_slide-logo,
+    .Sales_slide-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .Projecits_swiper-slide,
+    .Sales_swiper-slide {
+        width: 150px !important;
+        height: 340px;
+    }
+
+    .Projecits_slide-address,
+    .Sales_cart-address,
+    .Projecits_slide-club,
+    .Sales_cart-club,
+    .Projecits_slide-text,
+    .Sales_cart-text,
+    .Projecits_slide-price,
+    .Sales_slide-price,
+    .Projecits_slide-btn,
+    .Sales_slide-btn {
         font-size: 12px;
     }
 
-    .Conditioner_Product-card {
-        width: 125px;
-        padding: 0;
-        height: 165px;
+    .Projecits_slide-address,
+    .Sales_cart-address {
+        margin-bottom: 10px;
     }
 
-    .Conditioner_img {
-        width: 110px;
-        height: 100px;
+    .Investors_subtitle {
+        font-size: 20px;
+    }
+
+    .Team_item-box {
+        width: 195px;
+    }
+
+    .Team_blok-item {
+        width: 330px;
+        height: 180px;
+    }
+
+    .Team_inner-text {
+        height: 45%;
+        padding-bottom: 50px;
+    }
+
+    .Form_inner-name,
+    .Form_inner-phone,
+    .Form_item-btn {
+        width: 320px;
+    }
+
+    .Form_item-btn {
+        padding: 14px 115px;
+    }
+
+    .Contacts_background {
+        height: 30vh;
+    }
+
+    .footer_site>p {
+        font-size: 14px;
+        width: 360px;
+        height: 40px;
+    }
+
+}
+
+@media(max-width:320px) {
+    .open-cart {
+        padding: 15px 60px;
+        right: 10px;
+    }
+
+    .Projecits_swiper-slide,
+    .Sales_swiper-slide {
+        width: 140px !important;
+        height: 325px;
+    }
+
+    .Projecits_slide-img,
+    .Sales_slide-img {
+        width: 140px;
+        height: 125px;
+    }
+
+    .Projecits_slide-logo,
+    .Sales_slide-logo {
+        width: 55px;
+        height: 55px;
+        top: 5px;
+        left: 3px;
+    }
+
+    .Projecits_slide-text,
+    .Sales_cart-text {
+        color: #fff;
+        margin-bottom: 10px;
+        line-height: 1.2;
+    }
+
+    .Projecits_slide-product,
+    .Sales_slide-product {
+        margin: 5px;
+    }
+
+    .Information_inner-list {
+        display: grid;
+        grid-template-columns: 175px 110px;
+        padding: 0;
+    }
+
+    .Team_item-box {
+        width: 150px;
+    }
+
+    .Form_inner-name,
+    .Form_inner-phone,
+    .Form_item-btn {
+        width: 277px;
+    }
+
+    .Investors_subtitle {
+        font-size: 23px;
+        line-height: 1.5;
+        height: 90px;
+        width: 290px;
+        left: 14px;
+    }
+
+    .Investors_blok-left,
+    .Investors_blok-right {
+        width: 295px;
+        height: 150px;
+    }
+
+    .Investors_info-btn {
+        padding: 15px 99px;
+        right: 10px;
+    }
+
+    .Form_item-btn {
+        padding: 14px 100px;
     }
 }
